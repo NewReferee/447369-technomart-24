@@ -6,35 +6,40 @@
   </head>
   <body>
   	<header class="main-header">
-				<a href="#" class="main-header-logo">Техномарт</a>
-				<!--Форма поиска-->
-				<a href="#">Закладки: </a>
-				<a href="#">Корзина: </a>
-				<a href="#">Оформить заказ: </a>
-				<p class="header-text">
-					Интернет-магазин
-					строительных материалов
-					и инструментов для ремонта
+			<a href="index.html" class="header-logo">Техномарт</a>
+			<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+				<p class="search-item">
+					<label for="search-field">Поиск: </label>
+					<input name="search" id="search-field" type="search" placeholder="Поиск по сайту">
 				</p>
-				<p class="header-tel">
-					+7(812)555-05-55
-				</p>
-				<p class="header-address">
-					г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-				</p>
-				<div class="user-navigation">
-					<ul>
-						<li class="user-name">Имя пользователя</li>
-						<li class="user-escape"><a href="#">Выход</a></li>
-					</ul>
-					<ul>
-						<li class="user-orders"><a href="#">Мои заказы</a></li>
-						<li class="user-profile"><a href="#">Личный кабинет</a></li>
-					</ul>
-				</div>
+			</form>
+			<a href="#">Закладки: </a>
+			<a href="#">Корзина: </a>
+			<a href="#">Оформить заказ</a>
+			<p class="header-text">
+				Интернет-магазин
+				строительных материалов
+				и инструментов для ремонта
+			</p>
+			<p class="header-tel">
+				+7(812)555-05-55
+			</p>
+			<p class="header-address">
+				г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+			</p>
+			<div class="user-navigation">
+				<ul>
+					<li class="user-name">Имя пользователя</li>
+					<li class="user-escape"><a href="#">Выход</a></li>
+				</ul>
+				<ul>
+					<li class="user-orders"><a href="#">Мои заказы</a></li>
+					<li class="user-profile"><a href="#">Личный кабинет</a></li>
+				</ul>
+			</div>
 			<nav class="main-navigation">
 				<ul class="site-navigation">
-					<li><a href="#">Главная</a></li>
+					<li><a href="index.html">Главная</a></li>
 					<li><a href="#">Компания</a></li>
 					<li><a href="#">Каталог</a></li>
 					<li><a href="#">Новости</a></li>
@@ -44,7 +49,7 @@
 				</ul>
 			</nav>
   	</header>
-  	<main class="container">
+  	<main class="main-container">
 			<ul class="breadcrumbs">
 				<li><a href="#">Каталог</a></li>
 				<li><a href="#">Инструмент</a></li>
@@ -53,28 +58,59 @@
 			<h1 class="page-title">Перфораторы</h1>
 			<section class="filters">
 				<h2>Фильтр:</h2>
-				<section class="filters-price">
-					<h3>Цена:</h3>
-					<!--Форма-->
-				</section>
-				<section class="filters-model">
-					<h3>Производители:</h3>
-					<ul>
-						<li class="button filters-checked"><a class="button">BOSH</a></li>
-						<li><a class="button"></a>Интерскол</li>
-						<li class="button filters-checked">MAKITA<a class="button"></a></li>
-						<li><a class="button"></a>DEWALT</li>
-						<li><a class="button">HITACHI</a></li>
-					</ul>
-				</section>
-				<section class="filters-power">
-					<h3>Питание:</h3>
-					<ul>
-						<li class="button filters-selected">Аккумуляторные<a class="button"></a></li>
-						<li><a class="button"></a>Сетевые</li>
-					</ul>
-				</section>
-			<a class="button" href="#">Показать</a>
+				<form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
+					<fieldset>
+					<legend>Цена:</legend>
+					<!--Ползунок-->
+					</fieldset>
+					<fieldset>
+						<legend>Производители:</legend>
+						<ul>
+							<li class="filter-option">
+								<label for="bosh-field">Bosch</label>
+								<input name="bosh" id="bosh-field" type="checkbox" checked>
+							</li>
+							<li class="filter-option">
+								<label for="interskol-field">Интерскол</label>
+								<input name="interskol" id="interskol-field" type="checkbox">
+							</li>
+							<li class="filter-option">
+								<label for="makita-field">Makita</label>
+								<input name="makita" id="makita-field" type="checkbox" checked>
+							</li>
+							<li class="filter-option">
+								<label for="dewalt-field">Dewalt</label>
+								<input name="dewalt" id="dewalt-field" type="checkbox">
+							</li>
+							<li class="filter-option">
+								<label for="hitachi-field">Hitachi</label>
+								<input name="hitachi" id="hitachi-field" type="checkbox">
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset>
+						<legend>Питание:</legend>
+						<ul>
+							<li class="filter-option">
+								<label for="battery-field">Аккумуляторные</label>
+								<input name="power" id="battery-field" type="radio" checked>
+							</li>
+							<li class="filter-option">
+								<label for="wire-field">Сетевые</label>
+								<input name="power" id="wire-field" type="radio">
+							</li>
+						</ul>
+					</fieldset>
+					<button class="filter-apply" type="button">Показать</button>
+				</form>
+			</section>
+			<section class="modal modal-cart">
+				<h2 class="visually-hidden">Хотите ли вы оформить заказ</h2>
+				<p class="cart-text">Товар добавлен в корзину!</p>
+				<form class="cart-form" action="https://echo.htmlacademy.ru" method="post">
+					<button class="cart-order" type="button">Оформить заказ</button>
+					<button class="cart-continue" type="button">Продолжить покупки</button>
+				</form>
 			</section>
 			<section class="catalog">
 				<h2 class="visually-hidden">Каталог товаров</h2>
@@ -134,45 +170,43 @@
 			</section>
   	</main>
   	<footer class="main-footer">
-  		<div class="footer-container-top">
-				<div class="main-header-logo">
-					<a href="#">Техномарт</a>
-				</div>
-					<ul class="footer-navigation">
-						<li><a href="#">Компания</a></li>
-						<li><a href="#">Новости</a></li>
-						<li><a href="#">Каталог</a></li>
-						<li><a href="#">Доставка</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
+  		<div class="container-top">
+				<a class="main-logo" href="index.html">Техномарт</a>
+				<ul class="footer-navigation">
+					<li><a href="#">Компания</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
 				<p class="footer-contacts">
 					г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
 					+7 (812) 555-05-55
 				</p>
-					<ul class="footer-category">
-						<li><a href="#">Материалы</a></li>
-						<li><a href="#">Техника</a></li>
-						<li><a href="#">Инструмент</a></li>
-						<li><a href="#">Спецпредложения</a></li>
-					</ul>
+				<ul class="footer-category">
+					<li><a href="#">Материалы</a></li>
+					<li><a href="#">Техника</a></li>
+					<li><a href="#">Инструмент</a></li>
+					<li><a href="#">Спецпредложения</a></li>
+				</ul>
 			</div>
-			<div class="footer-container-bottom">
+			<div class="container-bottom">
 				<p class="footer-copyright">
 					© 2010–2019 Компания «Техномарт»<br>
 					Все права защищены
 				</p>
 				<ul>
-					<li class="social-button"><a>Вконтакте</a></li>
-					<li class="social-button"><a>Facebook</a></li>
-					<li class="social-button"><a>Instagram</a></li>
+					<li class="social-button"><a href="#">Вконтакте</a></li>
+					<li class="social-button"><a href="#">Facebook</a></li>
+					<li class="social-button"><a href="#">Instagram</a></li>
 				</ul>
 				<p class="footer-email">
 					Обратная связь:<br>
-					mail@htmlacademy.ru
+					<a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
 				</p>
 				<p class="footer-author">
 					Разработано –<br>
-					htmlacademy.ru
+					<a href="htmlacademy.ru">htmlacademy.ru</a>
 				</p>
 			</div>
   	</footer>
