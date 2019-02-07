@@ -1,0 +1,506 @@
+/* Директивы */
+
+@font-face {
+font-family: 'Myriad Pro Regular';
+src: url('MyriadPro-Regular.eot');
+src: url('MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+url('MyriadPro-Regular.woff') format('woff'),
+url('MyriadPro-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+/* Общее */
+
+body {
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0px;
+	border: 0px;
+	overflow: hidden;
+}
+
+.main-header,.main-footer {
+	font-family: Cuprum, Tahoma, sans-serif;
+	color: #ffffff;
+}
+
+/* Шапка */
+
+.main-header {
+	font-size: 17px;
+	background-color: #f3f7f9;
+}
+
+.header-top {
+	display: flex;
+	align-items: center;
+	height: 42px;
+	line-height: 18px;
+	background-color: #293449;
+}
+
+.header-middle {
+	display: flex;
+	align-items: center;
+}
+
+.main-navigation {
+	height: 60px;
+	background-color: #32425c;
+}
+
+.main-navigation li:hover {
+	background-color: #293449;
+}
+
+.main-navigation a:active,.main-navigation li:active {
+	color: #7f858f;
+	background-color: #1d2739;
+}
+
+.main-logo {
+	box-sizing: border-box;
+	width: 220px;
+	height: 42px;	
+	padding: 13px 55px 16px 55px;
+	box-shadow: 0px 5px 0 0 #b52933;
+	background-color: #ee3643;
+}
+
+.main-logo:hover	{
+	background-color: #ca2c37;
+}
+
+.main-logo:active {
+	background-color: #ba2732;
+}
+
+.search {
+	height: 42px;
+	border: 0px;
+	color: #ffffff;
+	background-color: #293449;
+}
+
+.search::placeholder {
+	color: #ffffff;
+}
+
+.search:hover,.header-bookmarks:hover,.header-cart:hover {
+	background-color: #212a3a;
+}
+
+.search:focus	{
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.header-bookmarks,.header-cart {
+	display: flex;
+	align-items: center;
+	height: 42px;
+}
+
+.header-bookmarks:active,.header-cart:active {
+	color: #8c9095;
+	background-color: #161d29;
+}
+
+.header-order {
+	display: block;
+	box-sizing: border-box;
+	width: 150px;
+	height: 42px;	
+	padding: 14px 22px 13px 20px;
+	background-color: #63a63e;
+}
+
+.header-order:hover {
+	background-color: #5fbb2d;
+}
+
+.header-order:active {
+	color: #a8c29a;
+	background-color: #518534;
+}
+
+.page-title, .header-text {
+	font-size: 16px;
+	font-style: italic;
+	line-height: 23px;
+	color: #ee3643;
+}
+
+.header-tel {
+	font-size: 21px;
+	line-height: 21px;
+	color: #ee3643;
+}
+
+.header-address {
+	font-size: 14px;
+	line-height: 24px;
+	color: #32425c;
+}
+
+.user-navigation {
+	font-size: 21px;
+	line-height: 21px;
+	list-style-type: none;
+}
+
+.user-navigation ul {
+	display: flex;
+	align-items: center;	
+}
+
+.user-navigation ul {
+	list-style-type: none;
+}
+
+.user-navigation a {
+	color: #000000;
+}
+
+.user-navigation a:hover {
+	color: #ee3643;
+}
+
+.user-navigation a:active {
+	color: #c5c5c5;
+}
+
+.user-orders,.user-profile {
+	font-size: 16px;
+	line-height: 18px;
+	text-decoration: underline;
+}
+
+.site-navigation {
+	display: flex;
+	align-items: center;
+	line-height: 17px;
+	list-style-type: none;
+}
+
+.site-navigation li {
+	display: flex;
+	align-items: center;
+	height: 60px;
+}
+
+/* Подвал */
+
+.main-footer {
+	font-size: 18px;		
+}
+
+.footer-top {
+	display: flex;
+	flex-direction: column;
+	line-height: 24px;
+	color: #f3f7f9;
+	background-color: #32425c;
+}
+
+.footer-bottom {
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	line-height: 18px;
+	background-color: #293449;
+}
+
+.top-upper {
+	display: flex;
+}
+
+.top-lower {
+	display: flex;
+}
+
+.main-footer .main-logo {
+	height: 63px;
+}
+
+.footer-navigation,.social-list {
+	display: flex;
+	list-style-type: none;
+}
+
+.footer-navigation a:hover,.footer-category a:hover,.footer-email a:hover,.footer-author a:hover {
+	text-decoration: underline;
+}
+
+.footer-navigation a:active {
+	text-decoration: none;
+	color: #8b96a4;
+}
+
+.footer-contacts {
+	color: #f1f5f7;
+}
+
+.footer-category {
+	display: flex;
+	list-style-type: none;
+}
+
+.footer-category a {
+	color: #d6b479;
+}
+
+.footer-category a:active {
+	text-decoration: none;
+	color: #998a6e;
+}
+
+.social-button {
+	background-color: #212a3a;
+}
+
+.footer-email a,.footer-author a {
+	color: #ffd180;
+}
+
+.footer-email a:active,.footer-author a:active {
+	text-decoration: none;
+	color: #ee3643;
+}
+
+/* Контент */
+
+.main-container {
+	font-family: Cuprum, Tahoma, sans-serif;
+	color: #000000;
+}
+
+.title {
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.info-text,.contacts-text {
+	font-family: 'PT Sans', 'Tahoma', sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+}
+
+.info-list {
+	font-size: 18px;
+	line-height: 20px;
+	list-style-type: none;
+}
+
+.red-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 220px;
+	height: 38px;
+	border: none;
+	border-radius: 2px;
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #ee3643;
+}
+
+.breadcrumbs + .page-title {
+	font-size: 30px;
+	font-style: normal;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: #32425c;
+}
+
+.breadcrumbs,.breadcrumbs a {
+	font-family: 'PT Sans', 'Tahoma', sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+	list-style-type: none;
+	color: #000000;
+}
+
+.filters-form fieldset {
+	border: none;
+}
+
+.filters-form legend {
+	font-family: 'PT Sans', 'Tahoma', sans-serif;
+	font-size: 17px;
+	font-weight: bold;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.filter-list {
+	font-family: 'PT Sans', 'Tahoma', sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	text-transform: uppercase;
+	list-style-type: none;
+}
+
+.filter-apply {
+	box-sizing: border-box;
+	width: 140px;
+	height: 38px;
+	border: 1px solid #e5e5e5;
+	border-radius: 2px;
+	font-family: 'PT Sans', 'Tahoma', sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+	background-color: #ffffff;
+}
+
+.catalog-list {
+	list-style-type: none;
+}
+
+.catalog-item {
+	box-sizing: border-box;
+	width: 220px;
+	height: 318px;
+	border: 1px solid #e5e5e5;
+}
+
+.catalog-item:hover .item-image {
+	display: none;
+}
+
+.catalog-item:hover .item-purchase,.catalog-item:hover .item-remember {
+	display: block;
+}
+
+.catalog-item div  {
+	width: 218px;
+	height: 170px;
+}
+
+.item-title a {
+	font-family: 'PT Sans', 'Tahoma', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 20px;
+	color: #000000;
+}
+
+.item-discount {
+	font-family: 'PT Sans', 'Tahoma', sans-serif;
+	font-size: 17px;
+	font-weight: bold;
+	line-height: 18px;
+	text-decoration: line-through;
+	color: #999999;
+}
+
+.item-price {
+	text-align: center;
+	background-color: #ee3643;
+}
+
+.item-price a {
+	color: #ffffff;
+}
+
+.item-purchase,.item-remember {
+	display: none;
+	box-sizing: border-box;
+	width: 135px;
+	height: 35px;
+	background-color: #63a63e;
+	border-radius: 2px;
+	box-shadow: 0px 3px 0 0 #367315;
+}
+
+.item-purchase a,.item-remember a {
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.item-purchase:hover {
+	background-color: #5fbb2d;
+}
+
+.item-purchase:active {
+	background-color: #518534;
+	box-shadow: 0 3px 0 0 #518534;
+}
+
+.item-remember {
+	border: 3px solid #63a63e;
+	background-color: #ffffff;
+	box-shadow: none;
+}
+
+.item-remember a {
+	color: #32425c;
+}
+
+.item-remember:hover {
+	border: 3px solid #32425c;
+}
+
+.item-remember:active {
+	border: 3px solid #c1c6ce;
+	color: #c1c6ce;
+}
+
+/* Попапы */
+
+.modal-message {
+	font-size: 18px;
+	line-height: 18px;
+}
+
+.modal-message input {
+	font-family: 'PT Sans', 'Tahoma', sans-serif;
+	font-size: 13px;
+	color: #000000;
+}
+
+.modal-message input::placeholder,.modal-message textarea::placeholder {
+	font-family: 'PT Sans', 'Tahoma', sans-serif;
+	font-size: 13px;	
+	color: #a9a9a9;
+}
+
+.modal-cart {
+	width: 620px;
+	font-size: 30px;
+	line-height: 30px;
+}
+
+.cart-top {	
+	height: 170px;
+	box-shadow: 0px -7px 0 0 #ee3643;
+}
+
+.cart-bottom {
+	height: 112px;
+	background-color: #f1f1f1;
+}
+
+.cart-continue {
+	color: #000000;
+	background-color: #ffffff;
+}
