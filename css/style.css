@@ -138,6 +138,7 @@ a {
 
 .page-title, .header-text {
 	font-size: 16px;
+	font-weight: normal;
 	font-style: italic;
 	line-height: 23px;
 	color: #ee3643;
