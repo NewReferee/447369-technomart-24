@@ -18,18 +18,20 @@
 						<input class="search" name="search" id="search-field" type="search" placeholder="Поиск:">
 					</p>
 				</form>
-				<a class="header-bookmarks" href="#">Закладки:</a>
-				<a class="header-cart" href="#">Корзина:</a>
+				<a class="header-bookmarks" href="#">Закладки: 0</a>
+				<a class="header-cart" href="#">Корзина: 0</a>
 				<a class="header-order" href="#">Оформить заказ</a>
 			</div>
 			<div class="header-middle">
 				<h1 class="page-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-				<p>
-					<a class="header-tel" href="tel:+7-812-555-0555">+7(812)555-05-55</a>
-				</p>
-				<p class="header-address">
-					г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-				</p>
+				<div class="header-contacts">
+					<p>
+						<a class="header-tel" href="tel:+7-812-555-0555">+7(812)555-05-55</a>
+					</p>
+					<p class="header-address">
+						г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+					</p>
+				</div>
 				<ul class="user-navigation">
 					<li class="user-login"><a href="#">Войти</a></li>
 					<li class="user-register"><a href="#">Регистрация</a></li>
@@ -48,34 +50,36 @@
 			</nav>
   	</header>
   	<main class="main-container">
-  		<section class="company-info">
-				<h2 class="title">Компания «Техномарт»</h2>
-				<p class="info-text">
-					Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
-					строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
-				</p>
-				<p class="info-text">
-					Мы можем доставить ваш товар в самые отдаленные точки России!
-					Техномарт работает со многими транспортными компаниями: 
-				</p>
-				<ul class="info-list">
-					<li>Деловые линии</li>
-					<li>Автотрейдинг</li>
-					<li>ЖелДорЭкспедиция</li>
-				</ul>
-				<a class="red-button info-more" href="#">Подробнее о компании</a>
-			</section>
-			<section class="company-contacts">
-				<h2 class="title">Контакты</h2>
-				<p class="contacts-text">
-					Вы можете забрать товар сами,
-					заехав в наш офис:
-				</p>
-				<a class="map-thumbnail" href="#">
-					<img src="img/map-thumbnail.jpg" width="300" height="158" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-				</a>
-				<a class="red-button contacts-message"	href="#">Заблудились? Напишите нам!</a>
-			</section>
+  		<div class="main-wrap">
+	  		<section class="company-info">
+					<h2 class="title">Компания Техномарт</h2>
+					<p class="info-text">
+						Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
+						строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+					</p>
+					<p class="info-text">
+						Мы можем доставить ваш товар в самые отдаленные точки России!
+						Техномарт работает со многими транспортными компаниями: 
+					</p>
+					<ul class="info-list">
+						<li>Деловые линии</li>
+						<li>Автотрейдинг</li>
+						<li>ЖелДорЭкспедиция</li>
+					</ul>
+					<a class="red-button info-more" href="#">Подробнее о компании</a>
+				</section>
+				<section class="company-contacts">
+					<h2 class="title">Контакты</h2>
+					<p class="contacts-text">
+						Вы можете забрать товар сами,
+						заехав в наш офис:
+					</p>
+					<a class="map-thumbnail" href="#">
+						<img src="img/map-thumbnail.jpg" width="300" height="158" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+					</a>
+					<a class="red-button contacts-message"	href="#">Заблудились? Напишите нам!</a>
+				</section>
+			</div>
 			<section class="modal modal-map">
 				<h2 class="visually-hidden">Как до нас добраться</h2>
 				<p class="map-full">
@@ -85,21 +89,25 @@
 			<section class="modal modal-message">
 				<h2 class="visually-hidden">Написать нам на e-mail</h2>
 				<form class="message-form" action="https://echo.htmlacademy.ru" method="post">
-					<p class="message-item">
-						<label for="message-name-field">Ваше имя: </label>
-						<input name="message-name" id="message-name-field" type="text" placeholder="Имя Фамилия">
-					</p>
-					<p class="message-item">
-						<label for="message-email-field">Ваш e-mail: </label>
-						<input name="message-email" id="message-email-field" type="email" placeholder="email@example.com">
-					</p>
-					<p class="message-item">
+					<div class="message-top">
+						<p class="message-name">
+							<label for="message-name-field">Ваше имя: </label>
+							<input name="message-name" id="message-name-field" type="text" placeholder="Имя Фамилия">
+						</p>
+						<p class="message-email">
+							<label for="message-email-field">Ваш e-mail: </label>
+							<input name="message-email" id="message-email-field" type="email" placeholder="email@example.com">
+						</p>
+					</div>
+					<p class="message-text">
 						<label for="message-text-field">Текст письма: </label>
 						<textarea name="message-text" id="message-text-field" placeholder="В свободной форме"></textarea>
 					</p>
-					<button class="red-button message-send" type="submit">Отправить</button>
+					<div class="message-bottom">
+						<button class="red-button message-send" type="submit">Отправить</button>
+					</div>
 				</form>
-				<button class="message-close" type="button">Закрыть</button>
+				<button class="visually-hidden" type="button">Закрыть</button>
 			</section>
   	</main>
   	<footer class="main-footer">
