@@ -14,12 +14,39 @@
 				<a href="index.html"><img class="main-logo" src="img/main-logo.svg" width="220" height="47" alt="Логотип компании Техномарт"></a>
 				<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
 					<p class="search-item">
-						<label class="visually-hidden" for="search-field">Поиск: </label>
+						<label class="visually-hidden" for="search-field">Поиск:</label>			
 						<input class="search" name="search" id="search-field" type="search" placeholder="Поиск:">
+						<svg class="search-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px"
+							 height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve">
+							<g id="Layer_1">
+							</g>
+							<g id="Layer_2">
+								<path fill="#231F20" d="M17,15.586l-3.542-3.542C14.421,10.782,15,9.21,15,7.5C15,3.358,11.643,0,7.5,0C3.358,0,0,3.358,0,7.5
+									C0,11.643,3.358,15,7.5,15c1.71,0,3.282-0.579,4.544-1.542L15.586,17L17,15.586z M2,7.5C2,4.467,4.467,2,7.5,2
+									C10.532,2,13,4.467,13,7.5c0,3.032-2.468,5.5-5.5,5.5C4.467,13,2,10.532,2,7.5z"/>
+							</g>
+						</svg>
 					</p>
-				</form>
-				<a class="header-bookmarks" href="#">Закладки: 0</a>
-				<a class="header-cart" href="#">Корзина: 0</a>
+				</form>			
+				<a class="header-bookmarks" href="#">
+					<svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 width="14px" height="16px" viewBox="0 0 14 16" enable-background="new 0 0 14 16" xml:space="preserve">
+						<path fill="#E72C2D" d="M14,15c0,0.55-0.368,0.741-0.818,0.426l-5.363-3.765c-0.45-0.315-1.187-0.315-1.637,0l-5.364,3.765
+							C0.368,15.741,0,15.55,0,15V1c0-0.55,0.45-1,1-1h12c0.55,0,1,0.45,1,1V15z"/>
+					</svg>
+					<span>Закладки: 0</span>
+				</a>
+				<a class="header-cart" href="#">
+					<svg version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+						<g>
+							<circle cx="4.5" cy="13.5" r="1.5"/>
+							<circle cx="12.5" cy="13.5" r="1.5"/>
+							<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
+						</g>
+					</svg>
+				<span>Корзина: 0</span>
+				</a>
 				<a class="header-order" href="#">Оформить заказ</a>
 			</div>
 			<div class="header-middle">
@@ -38,8 +65,30 @@
 				</div>
 				<div class="user-navigation">
 					<ul class="user-list">
-						<li class="user-name"><a href="#">Данила Иванов</a></li>
-						<li class="visually-hidden"><a href="#">Выход</a></li>
+						<li class="user-name">
+							<a class="user-link" href="#">
+								<span>Данила Иванов</span>
+								<svg version="1.1" id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									 width="20px" height="18px" viewBox="0 0 20 18" enable-background="new 0 0 20 18" xml:space="preserve">
+									<path fill="#32425C" d="M17.881,14.166c-2.144-0.735-4.256-1.666-5.207-2.39c-0.657-0.501-0.77-1.618-0.517-2.415
+										c1.118-0.903,1.864-2.477,1.864-4.278C14.021,2.276,12.221,0,10,0S5.979,2.276,5.979,5.083c0,1.801,0.746,3.374,1.863,4.277
+										c0.253,0.798,0.141,1.915-0.517,2.416c-0.95,0.724-3.063,1.654-5.207,2.39S0,18,0,18h20C20,18,20.025,14.901,17.881,14.166z"/>
+								</svg>
+							</a>
+						</li>
+						<li class="user-logout">
+							<a class="user-link" href="#">
+								<span class="visually-hidden">Выход</span>
+								<svg version="1.1" id="Layer_6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									 width="21px" height="17px" viewBox="0 0 21 17" enable-background="new 0 0 21 17" xml:space="preserve">
+									<g>
+										<polygon fill="#32425C" points="21,8.5 12.125,0 12.125,6 6.125,6 6.125,11 12.125,11 12.125,17 	"/>
+										<path fill="#32425C" d="M3.106,13.952V3.048c0.018-0.376,0.171-1.057,1.01-1.057h5.027V0H4.116C1.938,0,1.112,1.81,1.087,3.027
+											v10.946C1.112,15.189,1.938,17,4.116,17h5.027v-1.99H4.116C3.277,15.01,3.124,14.327,3.106,13.952z"/>
+									</g>
+								</svg>
+							</a>
+						</li>
 					</ul>
 					<ul class="user-list">
 						<li class="user-orders"><a href="#">Мои заказы</a></li>
@@ -79,22 +128,107 @@
 							<ul class="filter-list">
 								<li class="filter-option">
 									<input name="bosh" id="bosh-field" type="checkbox" checked>
+									<svg class="filter-mark" version="1.1" id="Layer_7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										 width="23px" height="23px" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
+										<path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
+											C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z"/>
+									</svg>
+									<svg class="filter-mark filter-mark-current" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px"
+											 height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
+										<g id="Layer_8">
+										</g>
+										<g id="Layer_9">
+											<g>
+												<polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		"/>
+												<path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
+													H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
+											</g>
+										</g>
+									</svg>
 									<label for="bosh-field">Bosch</label>
 								</li>
-								<li class="filter-option">								
+								<li class="filter-option">
 									<input name="interskol" id="interskol-field" type="checkbox">
+									<svg class="filter-mark" version="1.1" id="Layer_10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										 width="23px" height="23px" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
+										<path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
+											C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z"/>
+									</svg>
+									<svg class="filter-mark filter-mark-current" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px"
+											 height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
+										<g id="Layer_11">
+										</g>
+										<g id="Layer_12">
+											<g>
+												<polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		"/>
+												<path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
+													H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
+											</g>
+										</g>
+									</svg>
 									<label for="interskol-field">Интерскол</label>
 								</li>
 								<li class="filter-option">
 									<input name="makita" id="makita-field" type="checkbox" checked>
+									<svg class="filter-mark" version="1.1" id="Layer_13" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										 width="23px" height="23px" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
+										<path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
+											C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z"/>
+									</svg>
+									<svg class="filter-mark filter-mark-current" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px"
+											 height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
+										<g id="Layer_14">
+										</g>
+										<g id="Layer_15">
+											<g>
+												<polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		"/>
+												<path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
+													H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
+											</g>
+										</g>
+									</svg>
 									<label for="makita-field">Makita</label>
 								</li>
 								<li class="filter-option">
 									<input name="dewalt" id="dewalt-field" type="checkbox">
+									<svg class="filter-mark" version="1.1" id="Layer_16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										 width="23px" height="23px" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
+										<path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
+											C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z"/>
+									</svg>
+									<svg class="filter-mark filter-mark-current" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px"
+											 height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
+										<g id="Layer_17">
+										</g>
+										<g id="Layer_18">
+											<g>
+												<polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		"/>
+												<path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
+													H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
+											</g>
+										</g>
+									</svg>
 									<label for="dewalt-field">Dewalt</label>
 								</li>
 								<li class="filter-option">
 									<input name="hitachi" id="hitachi-field" type="checkbox">
+									<svg class="filter-mark" version="1.1" id="Layer_19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										 width="23px" height="23px" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
+										<path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
+											C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z"/>
+									</svg>
+									<svg class="filter-mark filter-mark-current" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px"
+											 height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
+										<g id="Layer_20">
+										</g>
+										<g id="Layer_21">
+											<g>
+												<polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		"/>
+												<path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
+													H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
+											</g>
+										</g>
+									</svg>
 									<label for="hitachi-field">Hitachi</label>
 								</li>
 							</ul>
@@ -104,10 +238,32 @@
 							<ul class="filter-list">
 								<li class="filter-option">
 									<input name="power" id="battery-field" type="radio" checked>
+									<svg class="filter-mark" version="1.1" id="Layer_22" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										 width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
+										<path d="M12.5,4c4.687,0,8.5,3.813,8.5,8.5c0,4.687-3.813,8.5-8.5,8.5C7.813,21,4,17.187,4,12.5C4,7.813,7.813,4,12.5,4 M12.5,0
+											C5.597,0,0,5.597,0,12.5S5.597,25,12.5,25S25,19.403,25,12.5S19.403,0,12.5,0L12.5,0z"/>
+									</svg>
+									<svg class="filter-mark filter-mark-current" version="1.1" id="Layer_23" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										 width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
+										<path d="M12.5,4c4.687,0,8.5,3.813,8.5,8.5c0,4.687-3.813,8.5-8.5,8.5C7.813,21,4,17.187,4,12.5C4,7.813,7.813,4,12.5,4 M12.5,0
+											C5.597,0,0,5.597,0,12.5S5.597,25,12.5,25S25,19.403,25,12.5S19.403,0,12.5,0L12.5,0z"/>
+										<circle cx="12.5" cy="12.5" r="4.5"/>
+									</svg>
 									<label for="battery-field">Аккумуляторные</label>
 								</li>
 								<li class="filter-option">
 									<input name="power" id="wire-field" type="radio">
+									<svg class="filter-mark" version="1.1" id="Layer_24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										 width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
+										<path d="M12.5,4c4.687,0,8.5,3.813,8.5,8.5c0,4.687-3.813,8.5-8.5,8.5C7.813,21,4,17.187,4,12.5C4,7.813,7.813,4,12.5,4 M12.5,0
+											C5.597,0,0,5.597,0,12.5S5.597,25,12.5,25S25,19.403,25,12.5S19.403,0,12.5,0L12.5,0z"/>
+									</svg>
+									<svg class="filter-mark filter-mark-current" version="1.1" id="Layer_25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										 width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
+										<path d="M12.5,4c4.687,0,8.5,3.813,8.5,8.5c0,4.687-3.813,8.5-8.5,8.5C7.813,21,4,17.187,4,12.5C4,7.813,7.813,4,12.5,4 M12.5,0
+											C5.597,0,0,5.597,0,12.5S5.597,25,12.5,25S25,19.403,25,12.5S19.403,0,12.5,0L12.5,0z"/>
+										<circle cx="12.5" cy="12.5" r="4.5"/>
+									</svg>
 									<label for="wire-field">Сетевые</label>
 								</li>
 							</ul>
@@ -121,7 +277,19 @@
 						<li class="catalog-item">
 							<div>
 								<img class="item-image" src="img/product-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-								<p class="item-purchase"><a href="#">Купить</a></p>
+								<p class="item-purchase">
+									<a href="#">
+										<svg version="1.1" id="Layer_26" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											 width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+											<g>
+												<circle cx="4.5" cy="13.5" r="1.5"/>
+												<circle cx="12.5" cy="13.5" r="1.5"/>
+												<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
+											</g>
+										</svg>
+										<span>Купить</span>
+									</a>
+								</p>
 								<p class="item-remember"><a href="#">В закладки</a></p>
 							</div>
 							<h3 class="item-title"><a href="#">Перфоратор BOSCH <br>BFG 3000</a></h3>
@@ -131,17 +299,41 @@
 						<li class="catalog-item">
 							<div>
 								<img class="item-image" src="img/product-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
-								<p class="item-purchase"><a href="#">Купить</a></p>
+								<p class="item-purchase">
+									<a href="#">
+										<svg version="1.1" id="Layer_27" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											 width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+											<g>
+												<circle cx="4.5" cy="13.5" r="1.5"/>
+												<circle cx="12.5" cy="13.5" r="1.5"/>
+												<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
+											</g>
+										</svg>
+										<span>Купить</span>
+									</a>
+								</p>
 								<p class="item-remember"><a href="#">В закладки</a></p>
 							</div>
 							<h3 class="item-title"><a href="#">Перфоратор BOSCH <br>BFG 6000</a></h3>
 							<p class="item-discount">30500 Р.</p>
 							<p class="item-price"><a href="#">25500 Р.</a></p>
 						</li>
-						<li class="catalog-item">
+						<li class="catalog-item new-item">
 							<div>
 								<img class="item-image" src="img/product-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
-								<p class="item-purchase"><a href="#">Купить</a></p>
+								<p class="item-purchase">
+									<a href="#">
+										<svg version="1.1" id="Layer_28" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											 width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+											<g>
+												<circle cx="4.5" cy="13.5" r="1.5"/>
+												<circle cx="12.5" cy="13.5" r="1.5"/>
+												<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
+											</g>
+										</svg>
+										<span>Купить</span>
+									</a>
+								</p>
 								<p class="item-remember"><a href="#">В закладки</a></p>
 							</div>
 							<h3 class="item-title"><a href="#">Перфоратор BOSCH <br>BFG 2000</a></h3>
@@ -150,17 +342,41 @@
 						<li class="catalog-item">
 							<div>
 								<img class="item-image" src="img/product-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-								<p class="item-purchase"><a href="#">Купить</a></p>
+								<p class="item-purchase">
+									<a href="#">
+										<svg version="1.1" id="Layer_29" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											 width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+											<g>
+												<circle cx="4.5" cy="13.5" r="1.5"/>
+												<circle cx="12.5" cy="13.5" r="1.5"/>
+												<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
+											</g>
+										</svg>
+										<span>Купить</span>
+									</a>
+								</p>
 								<p class="item-remember"><a href="#">В закладки</a></p>
 							</div>
 							<h3 class="item-title"><a href="#">Перфоратор BOSCH <br>BFG 3000</a></h3>
 							<p class="item-discount">22500 Р.</p>
 							<p class="item-price"><a href="#">15500 Р.</a></p>
 						</li>
-						<li class="catalog-item">
+						<li class="catalog-item new-item">
 							<div>
 								<img class="item-image" src="img/product-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
-								<p class="item-purchase"><a href="#">Купить</a></p>
+								<p class="item-purchase">
+									<a href="#">
+										<svg version="1.1" id="Layer_30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											 width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+											<g>
+												<circle cx="4.5" cy="13.5" r="1.5"/>
+												<circle cx="12.5" cy="13.5" r="1.5"/>
+												<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
+											</g>
+										</svg>
+										<span>Купить</span>
+									</a>
+								</p>
 								<p class="item-remember"><a href="#">В закладки</a></p>
 							</div>
 							<h3 class="item-title"><a href="#">Перфоратор BOSCH <br>BFG 6000</a></h3>
@@ -170,16 +386,40 @@
 						<li class="catalog-item">
 							<div>
 								<img class="item-image" src="img/product-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
-								<p class="item-purchase"><a href="#">Купить</a></p>
+								<p class="item-purchase">
+									<a href="#">
+										<svg version="1.1" id="Layer_31" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											 width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+											<g>
+												<circle cx="4.5" cy="13.5" r="1.5"/>
+												<circle cx="12.5" cy="13.5" r="1.5"/>
+												<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
+											</g>
+										</svg>
+										<span>Купить</span>
+									</a>
+								</p>
 								<p class="item-remember"><a href="#">В закладки</a></p>
 							</div>
 							<h3 class="item-title"><a href="#">Перфоратор BOSCH <br>BFG 2000</a></h3>
 							<p class="item-price"><a href="#">12500 Р.</a></p>
 						</li>
-						<li class="catalog-item">
+						<li class="catalog-item new-item">
 							<div>
 								<img class="item-image" src="img/product-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-								<p class="item-purchase"><a href="#">Купить</a></p>
+								<p class="item-purchase">
+									<a href="#">
+										<svg version="1.1" id="Layer_32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											 width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+											<g>
+												<circle cx="4.5" cy="13.5" r="1.5"/>
+												<circle cx="12.5" cy="13.5" r="1.5"/>
+												<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
+											</g>
+										</svg>
+										<span>Купить</span>
+									</a>
+								</p>
 								<p class="item-remember"><a href="#">В закладки</a></p>
 							</div>
 							<h3 class="item-title"><a href="#">Перфоратор BOSCH <br>BFG 3000</a></h3>
@@ -189,7 +429,19 @@
 						<li class="catalog-item">
 							<div>
 								<img class="item-image" src="img/product-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
-								<p class="item-purchase"><a href="#">Купить</a></p>
+								<p class="item-purchase">
+									<a href="#">
+										<svg version="1.1" id="Layer_33" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											 width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+											<g>
+												<circle cx="4.5" cy="13.5" r="1.5"/>
+												<circle cx="12.5" cy="13.5" r="1.5"/>
+												<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
+											</g>
+										</svg>
+										<span>Купить</span>
+									</a>
+								</p>
 								<p class="item-remember"><a href="#">В закладки</a></p>
 							</div>
 							<h3 class="item-title"><a href="#">Перфоратор BOSCH <br>BFG 6000</a></h3>
@@ -199,7 +451,19 @@
 						<li class="catalog-item">
 							<div>
 								<img class="item-image" src="img/product-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
-								<p class="item-purchase"><a href="#">Купить</a></p>
+								<p class="item-purchase">
+									<a href="#">
+										<svg version="1.1" id="Layer_34" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											 width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+											<g>
+												<circle cx="4.5" cy="13.5" r="1.5"/>
+												<circle cx="12.5" cy="13.5" r="1.5"/>
+												<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
+											</g>
+										</svg>
+										<span>Купить</span>
+									</a>
+								</p>
 								<p class="item-remember"><a href="#">В закладки</a></p>
 							</div>
 							<h3 class="item-title"><a href="#">Перфоратор BOSCH <br>BFG 2000</a></h3>
@@ -212,6 +476,9 @@
 				<div class="cart-top">
 					<h2 class="visually-hidden">Хотите ли вы оформить заказ</h2>
 					<p class="cart-text">Товар добавлен в корзину!</p>
+					<button class="cross" type="button">
+						<span class="visually-hidden">Закрыть</span>
+					</button>
 				</div>
 				<div class="cart-bottom">
 					<form class="cart-form" action="https://echo.htmlacademy.ru" method="post">
@@ -252,9 +519,44 @@
 					Все права защищены
 				</p>
 				<ul class="social-list">
-					<li class="social-button"><a href="#">Вконтакте</a></li>
-					<li class="social-button"><a href="#">Facebook</a></li>
-					<li class="social-button"><a href="#">Instagram</a></li>
+					<li class="social-button">
+						<a href="#">
+							<span class="visually-hidden">Вконтакте</span>
+							<svg version="1.1" id="Layer_35" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 width="26px" height="15px" viewBox="0 0 26 15" enable-background="new 0 0 26 15" xml:space="preserve">
+								<path fill="#FFFFFF" d="M16.138,11.51c0.956-0.309,2.18,2.04,3.483,2.939c0.978,0.681,1.727,0.534,1.727,0.534l3.473-0.05
+									c0,0,1.815-0.112,0.957-1.554c-0.071-0.12-0.503-1.069-2.585-3.022c-2.177-2.043-1.882-1.712,0.739-5.244
+									c1.597-2.153,2.236-3.468,2.036-4.028c-0.192-0.539-1.365-0.399-1.365-0.399L20.69,0.713c-0.381,0.001-0.704,0.119-0.851,0.515
+									c-0.003,0.004-0.621,1.666-1.445,3.079c-1.741,2.989-2.436,3.148-2.724,2.961c-0.661-0.433-0.494-1.737-0.494-2.664
+									c0-2.897,0.432-4.105-0.846-4.417c-0.427-0.104-0.739-0.172-1.828-0.182c-1.392-0.021-2.574,0-3.244,0.329
+									c-0.445,0.223-0.786,0.712-0.579,0.74c0.26,0.035,0.843,0.16,1.155,0.586c0.401,0.552,0.389,1.789,0.389,1.789
+									s0.229,3.411-0.54,3.834c-0.528,0.29-1.25-0.302-2.803-3.016C6.087,2.879,5.488,1.345,5.488,1.345S5.372,1.06,5.162,0.904
+									C4.912,0.719,4.562,0.66,4.562,0.66L0.848,0.684c0,0-0.558,0.016-0.763,0.262C-0.097,1.164,0.07,1.614,0.07,1.614
+									s2.909,6.881,6.203,10.347c3.02,3.182,6.452,2.971,6.452,2.971h1.555c0,0,0.469-0.054,0.709-0.312
+									c0.224-0.24,0.214-0.691,0.214-0.691S15.172,11.82,16.138,11.51z"/>
+							</svg>
+						</a>
+					</li>
+					<li class="social-button">
+						<a href="#">
+							<span class="visually-hidden">Facebook</span>
+							<svg version="1.1" id="Layer_36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								 width="12px" height="22px" viewBox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve">
+								<path fill="#FFFFFF" d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z"/>
+							</svg>
+						</a>
+					</li>
+					<li class="social-button">
+						<a href="#">
+							<span class="visually-hidden">Instagram</span>
+							<svg version="1.1" id="Layer_37" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								 width="21px" height="21px" viewBox="0 0 21 21" enable-background="new 0 0 21 21" xml:space="preserve">
+								<path fill="#FFFFFF" d="M18,0H3C1.35,0,0,1.35,0,3v15c0,1.65,1.35,3,3,3h15c1.65,0,3-1.35,3-3V3C21,1.35,19.65,0,18,0z M10.5,7
+									c1.93,0,3.5,1.57,3.5,3.5S12.43,14,10.5,14S7,12.43,7,10.5S8.57,7,10.5,7z M18,18H3V9h1.181C4.067,9.482,4,9.983,4,10.5
+									c0,3.59,2.91,6.5,6.5,6.5s6.5-2.91,6.5-6.5c0-0.517-0.066-1.018-0.181-1.5H18V18z M18,7h-4V3h4V7z"/>
+							</svg>
+						</a>
+					</li>
 				</ul>
 				<p class="footer-email">
 					Обратная связь:<br>
