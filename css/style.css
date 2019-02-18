@@ -64,11 +64,7 @@ a {
 .main-header,
 .main-footer,
 .main-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	width: 960px;
-	margin: 0 auto;
+	width: auto;
 	font-family: Cuprum, Tahoma, sans-serif;
 	color: #ffffff;
 }
@@ -82,15 +78,26 @@ a {
 
 /* Шапка главной - верх */
 
+.header-top-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: auto;
+	margin: 0 auto;
+	background-color: #293449;
+}
+
 .header-top {
 	position: relative;
+	box-sizing: border-box;
 	display: flex;
 	flex-wrap: wrap;
 	flex-basis: 42px;
+	justify-content: center;
 	align-items: flex-start;
-	padding: 0px 10px;
+	width: 940px;
 	line-height: 18px;
-	background-color: #293449;
 }
 
 .main-logo {
@@ -112,7 +119,7 @@ a:focus .main-logo	{
 }
 
 .search-form {
-	flex-basis: 230px;
+	width: 230px;
 	margin-left: 10px;
 }
 
@@ -152,7 +159,7 @@ a:focus .main-logo	{
 .search-icon {
 	position: absolute;
 	top: 12px;
-	left: 247px;
+	left: 237px;
 	width: 17px;
 	height: 17px;
 }
@@ -175,7 +182,7 @@ a:focus .main-logo	{
 .header-bookmarks,
 .header-cart {
 	display: flex;
-	flex-basis: 140px;
+	width: 140px;
 	align-items: center;
 	margin-left: 20px;
 	min-height: 42px;
@@ -221,7 +228,7 @@ a:focus .main-logo	{
 	box-sizing: border-box;
 	display: flex;
 	flex-wrap: wrap;
-	flex-basis: 150px;
+	width: 150px;
 	justify-content: center;
 	align-items: center;	
 	min-height: 42px;
@@ -241,18 +248,27 @@ a:focus .main-logo	{
 
 /* Шапка главной - центр */
 
-.header-middle {
+.header-middle-wrapper {
 	display: flex;
-	flex-wrap: wrap;
-	flex-basis: 158px;
+	flex-direction: column;
+	justify-content: flex-start;
 	align-items: center;
-	padding-right: 10px;
+	width: auto;
+	margin: 0 auto;
+}
+
+.header-middle {
+	box-sizing: border-box;
+	display: flex;
+	flex-basis: 153px;
+	align-items: center;
+	width: 940px;
 }
 
 .page-title,
 .header-text {
-	flex-basis: 197px;
-	margin-left: 53px;
+	width: 198px;
+	margin-left: 63px;
 	font-size: 16px;
 	font-weight: normal;
 	font-style: italic;
@@ -261,7 +277,7 @@ a:focus .main-logo	{
 }
 
 .header-contacts {
-	flex-basis: 264px;
+	width: 264px;
 	margin-left: 71px;
 	text-align: center;
 }
@@ -310,18 +326,20 @@ a:focus .main-logo	{
 	color: #32425c;
 }
 
-.user-navigation {
+.user-navigation,
+.user-navigation-logged {
 	display: flex;
 	flex-wrap: wrap;
-	flex-basis: 280px;
+	width: 280px;
 	padding: 0px;
-	margin-left: auto;
+	margin-left: 68px;
 	font-size: 21px;
 	line-height: 21px;
 	list-style: none;
 }
 
-.user-navigation a {
+.user-navigation a,
+.user-navigation-logged a {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -331,18 +349,21 @@ a:focus .main-logo	{
 }
 
 .user-navigation a:hover,
-.user-navigation a:focus {
+.user-navigation a:focus,
+.user-navigation-logged a:hover,
+.user-navigation-logged a:focus {
 	color: #ee3643;
 }
 
-.user-navigation a:active {
+.user-navigation a:active,
+.user-navigation-logged a:active {
 	color: #c5c5c5;
 }
 
 .user-login {
 	display: flex;
 	flex-wrap: wrap;
-	flex-basis: 120px;
+	width: 120px;
 	justify-content: center;
 	align-items: stretch;
 	min-height: 45px;
@@ -375,11 +396,11 @@ a:focus .main-logo	{
 .user-register {
 	display: flex;
 	flex-wrap: wrap;
-	flex-basis: 150px;
+	width: 150px;
 	justify-content: center;
 	align-items: stretch;	
 	min-height: 45px;
-	margin-left: 10px;
+	margin-left: auto;
 	text-align: center;
 	background-color: #ffffff;
 }
@@ -388,6 +409,7 @@ a:focus .main-logo	{
 
 .main-navigation {
 	flex-basis: 60px;
+	width: auto;
 	background-color: #f3f7f9;
 }
 
@@ -402,15 +424,25 @@ a:focus .main-logo	{
 	background-color: #1d2739;
 }
 
+.header-bottom-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: auto;
+}
+
 .site-navigation {
+	box-sizing: border-box;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	margin-left: 10px;
-	margin-right: 10px;
-	padding-left: 35px;
-	padding-right: 35px;
+	width: 940px;
+	margin: 0px;
+	margin-bottom: 60px;
+	padding-left: 52px;
+	padding-right: 55px;
 	line-height: 17px;
 	list-style-type: none;
 	background-color: #32425c;
@@ -432,8 +464,9 @@ a:focus .main-logo	{
 
 /* Шапка каталога */
 
-.user-navigation {
-	flex-basis: 300px;
+.user-navigation-logged {
+	width: 300px;
+	margin-left: 54px;
 }
 
 .user-list {
@@ -481,7 +514,7 @@ a:focus .main-logo	{
 
 .user-name {
 	position: relative;
-	flex-basis: 240px;
+	width: 240px;
 }
 
 .user-name span {
@@ -495,7 +528,7 @@ a:focus .main-logo	{
 
 .user-logout {
 	position: relative;
-	flex-basis: 60px;
+	width: 50px;
 }
 
 .user-logout svg {
@@ -518,7 +551,7 @@ a:focus .main-logo	{
 /* Подвал */
 
 .main-footer {
-	font-size: 18px;		
+	font-size: 18px;
 }
 
 /* Подвал - самый верх */
@@ -527,11 +560,19 @@ a:focus .main-logo	{
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	padding-left: 10px;
-	padding-right: 10px;
+	width: 940px;
 	padding-bottom: 51px;
 	line-height: 24px;
 	color: #f3f7f9;
+}
+
+.footer-top-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: auto;
+	margin: 0 auto;
 	background-color: #32425c;
 }
 
@@ -554,6 +595,7 @@ a:focus .main-logo	{
 .social-list {
 	display: flex;
 	flex-wrap: wrap;
+	padding: 0px;
 	list-style-type: none;
 }
 
@@ -564,7 +606,6 @@ a:focus .main-logo	{
 	align-self: flex-end;
 	margin: 0px;
 	margin-bottom: 12px;
-	padding: 0px;
 }
 
 .footer-navigation li:not(:last-child) {
@@ -630,15 +671,24 @@ a:focus .main-logo	{
 
 /* Подвал - самый низ */
 
+.footer-bottom-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: auto;
+	margin: 0 auto;
+	background-color: #293449;
+}
+
 .footer-bottom {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
+	width: 940px;
 	padding-top: 39px;
 	padding-bottom: 35px;
-	padding-left: 10px;
-	padding-right: 25px;
 	font-size: 16px;
 	line-height: 18px;
 	background-color: #293449;
@@ -647,10 +697,6 @@ a:focus .main-logo	{
 .footer-bottom p,
 .footer-bottom ul {
 	margin: 0px;
-}
-
-.social-list {
-	padding: 0px;
 }
 
 .social-list li:not(:last-child) {
@@ -690,6 +736,10 @@ a:focus .main-logo	{
 	color: #ee3643;
 }
 
+.footer-author {
+	padding-right: 15px;
+}
+
 /* Контент главной */
 
 .main-container {
@@ -697,12 +747,20 @@ a:focus .main-logo	{
 	background-color: #ffffff;
 }
 
+.main-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: auto;
+	margin: 0 auto;	
+}
+
 .main-wrap {
 	display: flex;
 	flex-basis: 536px;
 	justify-content: space-between;
-	margin-left: 10px;
-	margin-right: 10px;
+	width: 940px;
 }
 
 /* Контент - о компании */
@@ -710,7 +768,7 @@ a:focus .main-logo	{
 .company-info {
 	display: flex;
 	flex-direction: column;
-	flex-basis: 570px;
+	width: 570px;
 	justify-content: space-between;
 }
 
@@ -751,7 +809,7 @@ a:focus .main-logo	{
 .info-list li::before {
 	position: absolute;
 	content: "";
-	left: 0%;
+	left: 0;
 	width: 25px;
 	height: 2px;
 	margin-top: 9px;
@@ -768,7 +826,7 @@ a:focus .main-logo	{
 .company-contacts {
 	display: flex;
 	flex-direction: column;	
-	flex-basis: 330px;
+	width: 330px;
 	justify-content: space-between;
 }
 
@@ -777,18 +835,29 @@ a:focus .main-logo	{
 .catalog-wrap {
 	display: flex;
 	flex-wrap: wrap;
+	width: 940px;
 }
 
 /* Контент каталога - хлебные крошки */
 
-.breadcrumbs + .page-title {
-	box-sizing: border-box;
-	flex-basis: 89px;
-	margin: 0px;
+.main-title-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: auto;
+	margin: 0 auto;
 	margin-bottom: 20px;
-	margin-left: 10px;
-	padding-top: 30px;
+	background-color: #ffffff;
+}
+
+.main-title-wrapper > .page-title {
+	box-sizing: border-box;
+	width: 940px;
 	padding-left: 30px;
+	padding-top: 32px;
+	padding-bottom: 29px;
+	margin: 0px;
 	font-size: 30px;
 	font-style: normal;
 	line-height: 30px;
@@ -797,12 +866,22 @@ a:focus .main-logo	{
 	background-color: #f2f6f8;
 }
 
+.breadcrumbs-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: auto;
+	margin: 0 auto;		
+}
+
 .breadcrumbs {
+	box-sizing: border-box;
 	display: flex;
 	flex-wrap: wrap;
 	flex-basis: 59px;
 	align-items: center;
-	margin-left: 10px;
+	width: 940px;
 	padding-left: 54px;
 }
 
@@ -827,7 +906,6 @@ a:focus .main-logo	{
 	flex-direction: column;
 	flex-grow: 1;
 	justify-content: flex-start;
-	margin-left: 10px;
 	font-family: 'PT Sans', 'Tahoma', sans-serif;
 	font-weight: bold;
 }
@@ -987,7 +1065,7 @@ input:checked ~ .filter-mark-current {
 .new-item div::after {
 	position: absolute;
 	content: "";
-	top: 0%;
+	top: 0;
 	left: calc(100% - 50px);	
 	width: 50px;
 	height: 50px;
@@ -1041,7 +1119,7 @@ input:checked ~ .filter-mark-current {
 .item-price::after {
 	position: absolute;
 	content: "";
-	top: 0%;
+	top: 0;
 	left: calc(100% - 9.5px);	
 	width: 0px;
 	height: 0px;
@@ -1125,7 +1203,6 @@ input:checked ~ .filter-mark-current {
 /* Попапы главной */
 
 .modal-map {
-	outline: 2px solid black;
 	position: relative;
 	margin-left: 10px;
 	margin-right: 10px;	
