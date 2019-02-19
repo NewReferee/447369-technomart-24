@@ -124,6 +124,7 @@ a:focus .main-logo	{
 }
 
 .search-item {
+	position: relative;
 	width: 100%;
 	margin: 0px;
 }
@@ -159,9 +160,7 @@ a:focus .main-logo	{
 .search-icon {
 	position: absolute;
 	top: 12px;
-	left: 237px;
-	width: 17px;
-	height: 17px;
+	left: 7px;
 }
 
 .search-icon path {
@@ -267,7 +266,7 @@ a:focus .main-logo	{
 
 .page-title,
 .header-text {
-	width: 198px;
+	width: 200px;
 	margin-left: 63px;
 	font-size: 16px;
 	font-weight: normal;
@@ -277,7 +276,7 @@ a:focus .main-logo	{
 }
 
 .header-contacts {
-	width: 264px;
+	width: 259px;
 	margin-left: 71px;
 	text-align: center;
 }
@@ -326,20 +325,19 @@ a:focus .main-logo	{
 	color: #32425c;
 }
 
-.user-navigation,
-.user-navigation-logged {
+.user-navigation {
 	display: flex;
 	flex-wrap: wrap;
-	width: 280px;
+	justify-content: flex-end;
+	width: 300px;
 	padding: 0px;
-	margin-left: 68px;
+	margin-left: 72px;
 	font-size: 21px;
 	line-height: 21px;
 	list-style: none;
 }
 
-.user-navigation a,
-.user-navigation-logged a {
+.user-navigation a {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -349,14 +347,11 @@ a:focus .main-logo	{
 }
 
 .user-navigation a:hover,
-.user-navigation a:focus,
-.user-navigation-logged a:hover,
-.user-navigation-logged a:focus {
+.user-navigation a:focus {
 	color: #ee3643;
 }
 
-.user-navigation a:active,
-.user-navigation-logged a:active {
+.user-navigation a:active {
 	color: #c5c5c5;
 }
 
@@ -367,6 +362,7 @@ a:focus .main-logo	{
 	justify-content: center;
 	align-items: stretch;
 	min-height: 45px;
+	margin-right: 10px;
 	text-align: center;
 	background-color: #ffffff;
 }
@@ -400,7 +396,6 @@ a:focus .main-logo	{
 	justify-content: center;
 	align-items: stretch;	
 	min-height: 45px;
-	margin-left: auto;
 	text-align: center;
 	background-color: #ffffff;
 }
@@ -463,11 +458,6 @@ a:focus .main-logo	{
 }
 
 /* Шапка каталога */
-
-.user-navigation-logged {
-	width: 300px;
-	margin-left: 54px;
-}
 
 .user-list {
 	display: flex;
