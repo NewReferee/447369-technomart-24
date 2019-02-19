@@ -114,7 +114,7 @@ a:focus .main-logo	{
 	background-color: #ca2c37;
 }
 
-.main-logo:active {
+a:active .main-logo {
 	background-color: #ba2732;
 }
 
