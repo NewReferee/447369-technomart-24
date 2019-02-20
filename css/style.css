@@ -19,8 +19,8 @@ a {
 	width: 1px;
 	height: 1px;
 	margin: -1px;
-	padding: 0px;
-	border: 0px;
+	padding: 0;
+	border: 0;
 	overflow: hidden;
 	clip-path: inset(100%);
 }
@@ -72,6 +72,7 @@ a {
 /* Шапка главной */
 
 .main-header {
+	min-height: 320px;
 	font-size: 17px;
 	background-color: #f3f7f9;
 }
@@ -81,9 +82,9 @@ a {
 .header-top-wrapper {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
 	align-items: center;
 	width: auto;
+	min-height: 42px;
 	margin: 0 auto;
 	background-color: #293449;
 }
@@ -93,10 +94,9 @@ a {
 	box-sizing: border-box;
 	display: flex;
 	flex-wrap: wrap;
-	flex-basis: 42px;
 	justify-content: center;
-	align-items: flex-start;
-	width: 940px;
+	width: 960px;
+	padding: 0 10px;
 	line-height: 18px;
 }
 
@@ -106,7 +106,7 @@ a {
 	height: 42px;	
 	padding: 10px 55px 13px 55px;
 	background-color: #ee3643;
-	box-shadow: 0px 5px 0 0 #b52933;
+	box-shadow: 0 5px 0 0 #b52933;
 }
 
 .main-logo:hover,
@@ -126,15 +126,15 @@ a:active .main-logo {
 .search-item {
 	position: relative;
 	width: 100%;
-	margin: 0px;
+	margin: 0;
 }
 
 .search {
 	box-sizing: border-box;
 	width: 100%;
 	min-height: 42px;
-	padding: 0px 34px;
-	border: 0px;
+	padding: 0 34px;
+	border: 0;
 	color: #ffffff;
 	background-color: #293449;
 }
@@ -250,18 +250,21 @@ a:active .main-logo {
 .header-middle-wrapper {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
+	justify-content: center;
 	align-items: center;
 	width: auto;
+	min-height: 158px;
+	padding: 0;
 	margin: 0 auto;
 }
 
 .header-middle {
 	box-sizing: border-box;
 	display: flex;
-	flex-basis: 153px;
 	align-items: center;
-	width: 940px;
+	width: 960px;
+	margin: 0;
+	padding: 0 10px;
 }
 
 .page-title,
@@ -293,7 +296,7 @@ a:active .main-logo {
 }
 
 .header-contacts p:last-child {
-	margin-top: 0px;
+	margin-top: 0;
 }
 
 .header-tel {
@@ -330,7 +333,7 @@ a:active .main-logo {
 	flex-wrap: wrap;
 	justify-content: flex-end;
 	width: 300px;
-	padding: 0px;
+	padding: 0;
 	margin-left: 72px;
 	font-size: 21px;
 	line-height: 21px;
@@ -403,9 +406,10 @@ a:active .main-logo {
 /* Шапка главной - низ */
 
 .main-navigation {
-	flex-basis: 60px;
-	width: auto;
-	background-color: #f3f7f9;
+	display: flex;
+	flex-direction: column;
+	width: 960px;
+	margin: 0 auto;
 }
 
 .main-navigation li:hover,
@@ -419,25 +423,16 @@ a:active .main-logo {
 	background-color: #1d2739;
 }
 
-.header-bottom-wrapper {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-	width: auto;
-}
-
 .site-navigation {
-	box-sizing: border-box;
 	display: flex;
 	flex-wrap: wrap;
+	flex-basis: 60px;
 	justify-content: space-between;
 	align-items: center;
-	width: 940px;
-	margin: 0px;
-	margin-bottom: 60px;
+	width: auto;
 	padding-left: 52px;
 	padding-right: 55px;
+	margin: 0 10px;
 	line-height: 17px;
 	list-style-type: none;
 	background-color: #32425c;
@@ -454,7 +449,7 @@ a:active .main-logo {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	padding: 0px 15px;
+	padding: 0 15px;
 }
 
 /* Шапка каталога */
@@ -465,8 +460,8 @@ a:active .main-logo {
 	justify-content: flex-start;
 	align-items: stretch;
 	width: 100%;
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 
@@ -546,16 +541,6 @@ a:active .main-logo {
 
 /* Подвал - самый верх */
 
-.footer-top {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	width: 940px;
-	padding-bottom: 51px;
-	line-height: 24px;
-	color: #f3f7f9;
-}
-
 .footer-top-wrapper {
 	display: flex;
 	flex-direction: column;
@@ -564,6 +549,18 @@ a:active .main-logo {
 	width: auto;
 	margin: 0 auto;
 	background-color: #32425c;
+}
+
+.footer-top {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 960px;
+	padding: 0 10px;
+	padding-bottom: 51px;
+	line-height: 24px;
+	color: #f3f7f9;
 }
 
 .top-upper {
@@ -585,7 +582,7 @@ a:active .main-logo {
 .social-list {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 0px;
+	padding: 0;
 	list-style-type: none;
 }
 
@@ -594,7 +591,7 @@ a:active .main-logo {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-self: flex-end;
-	margin: 0px;
+	margin: 0;
 	margin-bottom: 12px;
 }
 
@@ -625,11 +622,11 @@ a:active .main-logo {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: flex-start;
-	padding: 0px;
+	padding: 0;
 }
 
 .footer-contacts {
-	margin: 0px;
+	margin: 0;
 	margin-top: 31px;
 	color: #f1f5f7;
 }
@@ -639,10 +636,10 @@ a:active .main-logo {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: flex-start;
-	margin: 0px;
+	margin: 0;
 	margin-left: 23px;
 	margin-top: 31px;
-	padding: 0px;
+	padding: 0;
 	list-style-type: none;
 }
 
@@ -664,7 +661,6 @@ a:active .main-logo {
 .footer-bottom-wrapper {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
 	align-items: center;
 	width: auto;
 	margin: 0 auto;
@@ -672,11 +668,13 @@ a:active .main-logo {
 }
 
 .footer-bottom {
+	box-sizing: border-box;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	width: 940px;
+	width: 960px;
+	padding: 0 10px;
 	padding-top: 39px;
 	padding-bottom: 35px;
 	font-size: 16px;
@@ -686,7 +684,7 @@ a:active .main-logo {
 
 .footer-bottom p,
 .footer-bottom ul {
-	margin: 0px;
+	margin: 0;
 }
 
 .social-list li:not(:last-child) {
@@ -740,17 +738,18 @@ a:active .main-logo {
 .main-wrapper {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
 	align-items: center;
 	width: auto;
 	margin: 0 auto;	
 }
 
 .main-wrap {
+	box-sizing: border-box;
 	display: flex;
 	flex-basis: 536px;
 	justify-content: space-between;
-	width: 940px;
+	width: 960px;
+	padding: 0 10px;
 }
 
 /* Контент - о компании */
@@ -763,8 +762,8 @@ a:active .main-logo {
 }
 
 .title {
-	margin: 0px;
-	margin-top: 81px;
+	margin: 0;
+	margin-top: 82px;
 	font-size: 30px;
 	font-weight: normal;
 	line-height: 30px;
@@ -773,7 +772,7 @@ a:active .main-logo {
 
 .info-text,
 .contacts-text {
-	margin: 0px;
+	margin: 0;
 	font-family: 'PT Sans', 'Tahoma', sans-serif;
 	font-size: 13px;
 	line-height: 24px;
@@ -785,7 +784,7 @@ a:active .main-logo {
 	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: space-between;
-	margin: 0px;
+	margin: 0;
 	padding-left: 36px;
 	font-size: 18px;
 	line-height: 20px;
@@ -825,7 +824,6 @@ a:active .main-logo {
 .catalog-wrap {
 	display: flex;
 	flex-wrap: wrap;
-	width: 940px;
 }
 
 /* Контент каталога - хлебные крошки */
@@ -833,21 +831,18 @@ a:active .main-logo {
 .main-title-wrapper {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-	width: auto;
+	width: 960px;
 	margin: 0 auto;
 	margin-bottom: 20px;
-	background-color: #ffffff;
 }
 
 .main-title-wrapper > .page-title {
 	box-sizing: border-box;
-	width: 940px;
+	width: auto;
 	padding-left: 30px;
 	padding-top: 32px;
-	padding-bottom: 29px;
-	margin: 0px;
+	padding-bottom: 35px;
+	margin: 0 10px;
 	font-size: 30px;
 	font-style: normal;
 	line-height: 30px;
@@ -901,7 +896,7 @@ a:active .main-logo {
 }
 
 .filters .title {
-	margin: 0px;
+	margin: 0;
 	padding-top: 10px;
 	padding-bottom: 13px;
 	padding-left: 19px;
@@ -927,7 +922,7 @@ a:active .main-logo {
 }
 
 .filters-form p {
-	margin-top: 0px;
+	margin-top: 0;
 	margin-bottom: 13px;
 	font-family: 'PT Sans', 'Tahoma', sans-serif;
 	font-size: 17px;
@@ -937,8 +932,8 @@ a:active .main-logo {
 }
 
 .filter-list {
-	margin: 0px;
-	padding: 0px;	
+	margin: 0;
+	padding: 0;	
 	font-family: 'PT Sans', 'Tahoma', sans-serif;
 	font-size: 15px;
 	line-height: 20px;
@@ -1111,8 +1106,8 @@ input:checked ~ .filter-mark-current {
 	content: "";
 	top: 0;
 	left: calc(100% - 9.5px);	
-	width: 0px;
-	height: 0px;
+	width: 0;
+	height: 0;
 	border: 19px solid #ffffff;
 	border-left: 19px solid #ee3643;
 }
@@ -1125,7 +1120,7 @@ input:checked ~ .filter-mark-current {
 	min-height: 35px;
 	border-radius: 3px;
 	background-color: #63a63e;
-	box-shadow: 0px 3px 0 0 #367315;
+	box-shadow: 0 3px 0 0 #367315;
 }
 
 .item-purchase:hover,
@@ -1194,14 +1189,12 @@ input:checked ~ .filter-mark-current {
 
 .modal-map {
 	position: relative;
-	margin-left: 10px;
-	margin-right: 10px;	
 	margin-bottom: 35px;
 }
 
 .map-full {
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 }
 
 .modal-message {
@@ -1209,13 +1202,11 @@ input:checked ~ .filter-mark-current {
 	display: flex;
 	flex-basis: 423px;
 	align-items: stretch;
-	width: 620px;
-	margin-left: 10px;
-	margin-right: 10px;	
+	width: 620px;	
 	margin-bottom: 15px;
 	font-size: 18px;
 	line-height: 18px;
-	box-shadow: 0px -7px 0 0 #ff5357;
+	box-shadow: 0 -7px 0 0 #ff5357;
 }
 
 .modal-message input,
@@ -1262,7 +1253,7 @@ input:checked ~ .filter-mark-current {
 	flex-wrap: wrap;
 	flex-direction: column;
 	flex-grow: 1;
-	margin: 0px;
+	margin: 0;
 }
 
 .message-form label {
@@ -1278,7 +1269,7 @@ input:checked ~ .filter-mark-current {
 	flex-wrap: wrap;
 	flex-direction: column;
 	flex-grow: 1;
-	margin: 0px;
+	margin: 0;
 	margin-bottom: 37px;
 }
 
@@ -1317,7 +1308,7 @@ input:checked ~ .filter-mark-current {
 	justify-content: flex-end;
 	align-items: center;	
 	min-height: 170px;
-	box-shadow: 0px -7px 0 0 #ee3643;
+	box-shadow: 0 -7px 0 0 #ee3643;
 }
 
 .cart-top::before {
