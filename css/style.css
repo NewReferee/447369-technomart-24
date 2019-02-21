@@ -37,6 +37,7 @@ a {
 }
 
 .red-button {
+	box-sizing: border-box;
 	display: inline-flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -64,7 +65,6 @@ a {
 .main-header,
 .main-footer,
 .main-container {
-	width: auto;
 	font-family: Cuprum, Tahoma, sans-serif;
 	color: #ffffff;
 }
@@ -72,6 +72,7 @@ a {
 /* Шапка главной */
 
 .main-header {
+	box-sizing: border-box;
 	min-height: 320px;
 	font-size: 17px;
 	background-color: #f3f7f9;
@@ -80,10 +81,11 @@ a {
 /* Шапка главной - верх */
 
 .header-top-wrapper {
+	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: auto;
+	width: 100%;
 	min-height: 42px;
 	margin: 0 auto;
 	background-color: #293449;
@@ -180,6 +182,7 @@ a:active .main-logo {
 
 .header-bookmarks,
 .header-cart {
+	box-sizing: border-box;
 	display: flex;
 	width: 140px;
 	align-items: center;
@@ -248,11 +251,12 @@ a:active .main-logo {
 /* Шапка главной - центр */
 
 .header-middle-wrapper {
+	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: auto;
+	width: 100%;
 	min-height: 158px;
 	padding: 0;
 	margin: 0 auto;
@@ -286,6 +290,7 @@ a:active .main-logo {
 
 .header-contacts p:first-child {
 	position: relative;
+	box-sizing: border-box;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -359,6 +364,7 @@ a:active .main-logo {
 }
 
 .user-login {
+	box-sizing: border-box;
 	display: flex;
 	flex-wrap: wrap;
 	width: 120px;
@@ -393,6 +399,7 @@ a:active .main-logo {
 }
 
 .user-register {
+	box-sizing: border-box;
 	display: flex;
 	flex-wrap: wrap;
 	width: 150px;
@@ -429,7 +436,6 @@ a:active .main-logo {
 	flex-basis: 60px;
 	justify-content: space-between;
 	align-items: center;
-	width: auto;
 	padding-left: 52px;
 	padding-right: 55px;
 	margin: 0 10px;
@@ -439,6 +445,7 @@ a:active .main-logo {
 }
 
 .site-navigation li {
+	box-sizing: border-box;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: stretch;
@@ -466,6 +473,7 @@ a:active .main-logo {
 }
 
 .user-list:first-child {
+	box-sizing: border-box;
 	width: 100%;
 	margin-bottom: 10px;
 	min-height: 45px;
@@ -536,17 +544,21 @@ a:active .main-logo {
 /* Подвал */
 
 .main-footer {
+	box-sizing: border-box;
+	min-height: 300px;
 	font-size: 18px;
 }
 
 /* Подвал - самый верх */
 
 .footer-top-wrapper {
+	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	width: auto;
+	width: 100%;
+	min-height: 193px;
 	margin: 0 auto;
 	background-color: #32425c;
 }
@@ -557,6 +569,7 @@ a:active .main-logo {
 	flex-direction: column;
 	justify-content: flex-start;
 	width: 960px;
+	min-height: 193px;
 	padding: 0 10px;
 	padding-bottom: 51px;
 	line-height: 24px;
@@ -659,10 +672,12 @@ a:active .main-logo {
 /* Подвал - самый низ */
 
 .footer-bottom-wrapper {
+	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: auto;
+	width: 100%;
+	min-height: 107px;
 	margin: 0 auto;
 	background-color: #293449;
 }
@@ -674,6 +689,7 @@ a:active .main-logo {
 	justify-content: space-between;
 	align-items: center;
 	width: 960px;
+	min-height: 107px;
 	padding: 0 10px;
 	padding-top: 39px;
 	padding-bottom: 35px;
@@ -739,7 +755,7 @@ a:active .main-logo {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: auto;
+	width: 100%;
 	margin: 0 auto;	
 }
 
@@ -856,7 +872,8 @@ a:active .main-logo {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	width: auto;
+	width: 100%;
+	min-height: 59px;
 	margin: 0 auto;		
 }
 
@@ -867,7 +884,37 @@ a:active .main-logo {
 	flex-basis: 59px;
 	align-items: center;
 	width: 940px;
+	margin: 0px;
+	padding: 0px;
 	padding-left: 54px;
+}
+
+.breadcrumbs li {
+	position: relative;
+}
+
+.breadcrumbs a::before {
+	position: absolute;
+	content: "";
+	top: calc(50% - 7px);
+	left: -22px;
+	width: 8px;
+	height: 12px;
+	background-image: url("../img/arrow.svg");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.breadcrumbs li:first-child::after {
+	position: absolute;
+	content: "";
+	top: calc(50% - 7px);
+	left: -54px;
+	width: 14px;
+	height: 12px;
+	background-image: url("../img/home.svg");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
 }
 
 .breadcrumbs li:not(:first-child) {
@@ -1188,8 +1235,10 @@ input:checked ~ .filter-mark-current {
 /* Попапы главной */
 
 .modal-map {
-	position: relative;
+	position: fixed;
+	display: none;
 	margin-bottom: 35px;
+	box-shadow: 0 0 10px 3px rgba(47, 42, 43, 0.5);
 }
 
 .map-full {
@@ -1198,14 +1247,17 @@ input:checked ~ .filter-mark-current {
 }
 
 .modal-message {
-	position: relative;
-	display: flex;
-	flex-basis: 423px;
+	position: fixed;
+	box-sizing: border-box;
+	display: none;
+	justify-content: center;
 	align-items: stretch;
 	width: 620px;	
+	min-height: 423px;
 	margin-bottom: 15px;
 	font-size: 18px;
 	line-height: 18px;
+	background-color: #ffffff;
 	box-shadow: 0 -7px 0 0 #ff5357;
 }
 
@@ -1214,7 +1266,7 @@ input:checked ~ .filter-mark-current {
 	padding-top: 8px;
 	padding-bottom: 8px;	
 	padding-left: 14px;
-	border-color: #dee3e4;
+	border: 2px solid #dee3e4;
 	border-radius: 3px;
 	font-family: 'PT Sans', 'Tahoma', sans-serif;
 	font-size: 13px;
@@ -1235,14 +1287,16 @@ input:checked ~ .filter-mark-current {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: stretch;
-	margin-left: 80px;
-	margin-right: 80px;
+	width: 100%;
+	min-height: 423px;
 }
 
 .message-top {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	margin-left: 80px;
+	margin-right: 80px;
 	margin-top: 47px;
 	margin-bottom: 21px;
 }
@@ -1265,11 +1319,14 @@ input:checked ~ .filter-mark-current {
 }
 
 .message-text {
+	box-sizing: border-box;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
-	flex-grow: 1;
+	min-height: 114px;
 	margin: 0;
+	margin-left: 80px;
+	margin-right: 80px;	
 	margin-bottom: 37px;
 }
 
@@ -1278,36 +1335,45 @@ input:checked ~ .filter-mark-current {
 }
 
 .message-bottom {
+	box-sizing: border-box;
 	display: flex;
 	flex-wrap: wrap;
-	flex-basis: 112px;
+	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	align-items: stretch;
+	min-height: 112px;
 	background-color: #f4f4f4;
 }
 
 .message-send {
-	width: 460px;
+	width: auto;
+	margin-left: 80px;
+	margin-right: 80px;
 }
 
 /* Попапы каталога */
 
 .modal-cart {
-	display: flex;
+	position: fixed;
+	box-sizing: border-box;
+	display: none;
 	flex-wrap: wrap;
 	flex-direction: column;
 	width: 620px;
+	min-height: 282px;
 	font-size: 30px;
 	line-height: 30px;
 }
 
 .cart-top {
 	position: relative;
+	box-sizing: border-box;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-end;
 	align-items: center;	
 	min-height: 170px;
+	background-color: #ffffff;
 	box-shadow: 0 -7px 0 0 #ee3643;
 }
 
@@ -1327,6 +1393,7 @@ input:checked ~ .filter-mark-current {
 }
 
 .cart-bottom {
+	box-sizing: border-box;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
