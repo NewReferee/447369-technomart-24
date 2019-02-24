@@ -19,6 +19,19 @@ try {
 	isStorageSupport = false;
 }
 
+window.addEventListener('keydown', function (evt) {
+	if (evt.keyCode === 27) {
+		evt.preventDefault();
+		if (messagePopup.classList.contains('modal-show')) {
+			messagePopup.classList.remove('modal-show');
+			messagePopup.classList.remove('modal-error');
+		}
+		if (mapPopup.classList.contains('modal-show')) {
+			mapPopup.classList.remove('modal-show');
+		}
+	}
+})
+
 messageShow.addEventListener ('click', function (evt) {
 	evt.preventDefault();
 	messagePopup.classList.add('modal-show');
