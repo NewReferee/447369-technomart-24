@@ -815,11 +815,11 @@ a:active .main-logo {
 }
 
 .main-wrapper {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 100%;
-	margin: 0 auto;	
+	margin: 0 auto;
 }
 
 .main-wrap {
@@ -1356,8 +1356,11 @@ input:checked ~ .filter-mark-current {
 
 .modal-map {
 	position: fixed;
+	top: 50%;
+	left: 50%;
 	display: none;
-	margin-bottom: 35px;
+	margin-top: -223px;
+	margin-left: -470px;
 	box-shadow: 0 0 10px 3px rgba(47, 42, 43, 0.5);
 }
 
@@ -1368,13 +1371,17 @@ input:checked ~ .filter-mark-current {
 
 .modal-message {
 	position: fixed;
+	top: 50%;
+	left: 50%;
 	box-sizing: border-box;
 	display: none;
 	justify-content: center;
 	align-items: stretch;
 	width: 620px;	
 	min-height: 423px;
+	margin-top: -211px;
 	margin-bottom: 15px;
+	margin-left: -310px;
 	font-size: 18px;
 	line-height: 18px;
 	background-color: #ffffff;
@@ -1546,6 +1553,15 @@ input:checked ~ .filter-mark-current {
 
 /* Дополнительные классы для JavaScript и анимации */
 
+@keyframes emersion {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 @keyframes shake {
 	0%,
 	100% {
@@ -1568,6 +1584,9 @@ input:checked ~ .filter-mark-current {
 
 .modal-show {
 	display: block;
+	animation-name: emersion;
+	animation-duration: 0.2s;
+	animation-timing-function: linear;
 }
 
 .modal-error {
