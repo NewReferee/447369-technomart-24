@@ -320,6 +320,11 @@ a:active .main-logo {
 }
 
 .header-tel {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -452,28 +457,38 @@ a:active .main-logo {
 	flex-wrap: wrap;
 	min-height: 60px;
 	justify-content: space-between;
-	align-items: center;
-	padding-left: 34.5px;
-	padding-right: 37.5px;
+	align-items: flex-start;
 	margin: 0 10px;
+	padding: 0;
 	line-height: 17px;
 	list-style-type: none;
 	background-color: #32425c;
 }
 
 .site-navigation li {
+	position: relative;
 	box-sizing: border-box;
 	display: flex;
 	flex-wrap: wrap;
-	align-items: stretch;
+	align-items: flex-start;
 	min-height: 60px;
+	margin: 0 auto;
+	padding: 0;
 }
 
 .site-navigation a {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
-	padding: 0 17.5px;
+	align-items: flex-start;
+	padding: 19px 24px;
+}
+
+.site-navigation li:first-of-type {
+	margin-left: 28px;
+}
+
+.site-navigation li:last-of-type {
+	margin-right: 28px;
 }
 
 /* Шапка каталога */
@@ -530,6 +545,12 @@ a:active .main-logo {
 	fill: #32425c;
 }
 
+.user-text {
+	max-width: 200px;
+	margin-left: 24px;
+	margin-right: 35px;
+}
+
 .user-link:active path,
 .user-link:active polygon {
 	fill: #c5c5c5;
@@ -538,11 +559,11 @@ a:active .main-logo {
 .user-name {
 	position: relative;
 	padding: 0;
-	padding-left: 24px;
 }
 
 .user-name svg {
 	position: absolute;
+	top: 28%;
 	left: 13px;
 }
 
