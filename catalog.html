@@ -5,13 +5,13 @@
     <title>Техномарт</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/style-min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   	<header class="main-header entered-header">
   		<div class="header-top-wrapper">
 	  		<div class="header-top">
-					<a href="index.html"><img class="main-logo" src="img/main-logo.svg" width="220" height="47" alt="Логотип компании Техномарт"></a>
+					<a class="main-logo-link" href="index.html"><img class="main-logo" src="img/main-logo.svg" width="220" height="47" alt="Логотип компании Техномарт"></a>
 					<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
 						<p class="search-item">
 							<label class="visually-hidden" for="search-field">Поиск:</label>			
@@ -36,7 +36,7 @@
 						</svg>
 						<span>Закладки: 0</span>
 					</a>
-					<a class="header-cart" href="#">
+					<a class="header-cart header-cart-full" href="#">
 						<svg version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							 width="15" height="15" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
 							<g>
@@ -45,7 +45,7 @@
 								<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
 							</g>
 						</svg>
-					<span>Корзина: 0</span>
+					<span>Корзина: 10</span>
 					</a>
 					<a class="header-order" href="#">Оформить заказ</a>
 				</div>
@@ -136,9 +136,19 @@
 						<section class="filters">
 							<h2 class="title">Фильтр:</h2>
 							<form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
-								<div>
-									<p>Цена:</p>
-									<!--Ползунок-->
+								<p>Цена:</p>
+								<div class="range">
+									<div class="range-slider">
+										<div class="range-slider-min">
+										</div>
+										<div class="range-slider-max">
+										</div>
+									</div>
+									<div class="range-number">
+										<input name="range-number-min" type="text" value="0">
+										<span>—</span>
+										<input name="range-number-max" type="text" value="30000">
+									</div>
 								</div>
 								<div>
 									<p>Производители:</p>
@@ -288,206 +298,231 @@
 								<button class="filter-apply" type="submit">Показать</button>
 							</form>
 						</section>
-						<section class="catalog">
-							<h2 class="visually-hidden">Каталог товаров</h2>
-							<ul class="catalog-list">
-								<li class="catalog-item">
-									<div>
-										<img class="item-image" src="img/product-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-										<p class="item-purchase">
-											<a href="#">
-												<svg version="1.1" id="Layer_26" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-													 width="15" height="15" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
-													<g>
-														<circle cx="4.5" cy="13.5" r="1.5"/>
-														<circle cx="12.5" cy="13.5" r="1.5"/>
-														<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
-													</g>
-												</svg>
-												<span>Купить</span>
-											</a>
-										</p>
-										<p class="item-remember"><a href="#">В закладки</a></p>
-									</div>
-									<h3 class="item-title"><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
-									<p class="item-discount">22500 Р.</p>
-									<p class="item-price"><a href="#">15500 Р.</a></p>
-								</li>
-								<li class="catalog-item">
-									<div>
-										<img class="item-image" src="img/product-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
-										<p class="item-purchase">
-											<a href="#">
-												<svg version="1.1" id="Layer_27" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-													 width="15" height="15" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
-													<g>
-														<circle cx="4.5" cy="13.5" r="1.5"/>
-														<circle cx="12.5" cy="13.5" r="1.5"/>
-														<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
-													</g>
-												</svg>
-												<span>Купить</span>
-											</a>
-										</p>
-										<p class="item-remember"><a href="#">В закладки</a></p>
-									</div>
-									<h3 class="item-title"><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
-									<p class="item-discount">30500 Р.</p>
-									<p class="item-price"><a href="#">25500 Р.</a></p>
-								</li>
-								<li class="catalog-item new-item">
-									<div>
-										<img class="item-image" src="img/product-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
-										<p class="item-purchase">
-											<a href="#">
-												<svg version="1.1" id="Layer_28" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-													 width="15" height="15" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
-													<g>
-														<circle cx="4.5" cy="13.5" r="1.5"/>
-														<circle cx="12.5" cy="13.5" r="1.5"/>
-														<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
-													</g>
-												</svg>
-												<span>Купить</span>
-											</a>
-										</p>
-										<p class="item-remember"><a href="#">В закладки</a></p>
-									</div>
-									<h3 class="item-title"><a href="#">Перфоратор BOSCH BFG 2000</a></h3>
-									<p class="item-price"><a href="#">12500 Р.</a></p>
-								</li>
-								<li class="catalog-item">
-									<div>
-										<img class="item-image" src="img/product-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-										<p class="item-purchase">
-											<a href="#">
-												<svg version="1.1" id="Layer_29" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-													 width="15" height="15" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
-													<g>
-														<circle cx="4.5" cy="13.5" r="1.5"/>
-														<circle cx="12.5" cy="13.5" r="1.5"/>
-														<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
-													</g>
-												</svg>
-												<span>Купить</span>
-											</a>
-										</p>
-										<p class="item-remember"><a href="#">В закладки</a></p>
-									</div>
-									<h3 class="item-title"><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
-									<p class="item-discount">22500 Р.</p>
-									<p class="item-price"><a href="#">15500 Р.</a></p>
-								</li>
-								<li class="catalog-item new-item">
-									<div>
-										<img class="item-image" src="img/product-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
-										<p class="item-purchase">
-											<a href="#">
-												<svg version="1.1" id="Layer_30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-													 width="15" height="15" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
-													<g>
-														<circle cx="4.5" cy="13.5" r="1.5"/>
-														<circle cx="12.5" cy="13.5" r="1.5"/>
-														<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
-													</g>
-												</svg>
-												<span>Купить</span>
-											</a>
-										</p>
-										<p class="item-remember"><a href="#">В закладки</a></p>
-									</div>
-									<h3 class="item-title"><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
-									<p class="item-discount">30500 Р.</p>
-									<p class="item-price"><a href="#">25500 Р.</a></p>
-								</li>
-								<li class="catalog-item">
-									<div>
-										<img class="item-image" src="img/product-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
-										<p class="item-purchase">
-											<a href="#">
-												<svg version="1.1" id="Layer_31" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-													 width="15" height="15" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
-													<g>
-														<circle cx="4.5" cy="13.5" r="1.5"/>
-														<circle cx="12.5" cy="13.5" r="1.5"/>
-														<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
-													</g>
-												</svg>
-												<span>Купить</span>
-											</a>
-										</p>
-										<p class="item-remember"><a href="#">В закладки</a></p>
-									</div>
-									<h3 class="item-title"><a href="#">Перфоратор BOSCH BFG 2000</a></h3>
-									<p class="item-price"><a href="#">12500 Р.</a></p>
-								</li>
-								<li class="catalog-item new-item">
-									<div>
-										<img class="item-image" src="img/product-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-										<p class="item-purchase">
-											<a href="#">
-												<svg version="1.1" id="Layer_32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-													 width="15" height="15" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
-													<g>
-														<circle cx="4.5" cy="13.5" r="1.5"/>
-														<circle cx="12.5" cy="13.5" r="1.5"/>
-														<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
-													</g>
-												</svg>
-												<span>Купить</span>
-											</a>
-										</p>
-										<p class="item-remember"><a href="#">В закладки</a></p>
-									</div>
-									<h3 class="item-title"><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
-									<p class="item-discount">22500 Р.</p>
-									<p class="item-price"><a href="#">15500 Р.</a></p>
-								</li>
-								<li class="catalog-item">
-									<div>
-										<img class="item-image" src="img/product-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
-										<p class="item-purchase">
-											<a href="#">
-												<svg version="1.1" id="Layer_33" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-													 width="15" height="15" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
-													<g>
-														<circle cx="4.5" cy="13.5" r="1.5"/>
-														<circle cx="12.5" cy="13.5" r="1.5"/>
-														<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
-													</g>
-												</svg>
-												<span>Купить</span>
-											</a>
-										</p>
-										<p class="item-remember"><a href="#">В закладки</a></p>
-									</div>
-									<h3 class="item-title"><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
-									<p class="item-discount">30500 Р.</p>
-									<p class="item-price"><a href="#">25500 Р.</a></p>
-								</li>
-								<li class="catalog-item">
-									<div>
-										<img class="item-image" src="img/product-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
-										<p class="item-purchase">
-											<a href="#">
-												<svg version="1.1" id="Layer_34" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-													 width="15" height="15" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
-													<g>
-														<circle cx="4.5" cy="13.5" r="1.5"/>
-														<circle cx="12.5" cy="13.5" r="1.5"/>
-														<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
-													</g>
-												</svg>
-												<span>Купить</span>
-											</a>
-										</p>
-										<p class="item-remember"><a href="#">В закладки</a></p>
-									</div>
-									<h3 class="item-title"><a href="#">Перфоратор BOSCH BFG 2000</a></h3>
-									<p class="item-price"><a href="#">12500 Р.</a></p>
-								</li>
-							</ul>
-						</section>
+						<div class="catalog-inner">
+							<section class="sort">
+								<h2 class="title">Сортировка:</h2>
+								<ul class="sort-list">
+									<li class="sort-item sort-price">
+										<a href="#">
+											<span>По цене</span>
+											<svg width="23px" height="1px"><line x1="0" y1="0" x2="210" y2="0"></svg>
+										</a>
+									</li>
+									<li class="sort-item sort-type">
+										<a href="#">
+											<span>По типу</span>
+											<svg width="23px" height="1px"><line x1="0" y1="0" x2="210" y2="0"></svg>
+										</a>
+									</li>
+									<li class="sort-item sort-func">
+										<a href="#">
+											<span>По функционалу</span>
+											<svg width="23px" height="1px"><line x1="0" y1="0" x2="210" y2="0"></svg>
+										</a>
+									</li>
+								</ul>
+							</section>
+							<section class="catalog">
+								<h2 class="visually-hidden">Каталог товаров</h2>
+								<ul class="catalog-list">
+									<li class="catalog-item">
+										<div>
+											<img class="item-image" src="img/product-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+											<p class="item-purchase">
+												<a href="#">
+													<svg version="1.1" id="Layer_26" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+														 width="15" height="15" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+														<g>
+															<circle cx="4.5" cy="13.5" r="1.5"/>
+															<circle cx="12.5" cy="13.5" r="1.5"/>
+															<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
+														</g>
+													</svg>
+													<span>Купить</span>
+												</a>
+											</p>
+											<p class="item-remember"><a href="#">В закладки</a></p>
+										</div>
+										<h3 class="item-title"><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
+										<p class="item-discount">22500 Р.</p>
+										<p class="item-price"><a href="#">15500 Р.</a></p>
+									</li>
+									<li class="catalog-item">
+										<div>
+											<img class="item-image" src="img/product-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+											<p class="item-purchase">
+												<a href="#">
+													<svg version="1.1" id="Layer_27" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+														 width="15" height="15" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+														<g>
+															<circle cx="4.5" cy="13.5" r="1.5"/>
+															<circle cx="12.5" cy="13.5" r="1.5"/>
+															<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
+														</g>
+													</svg>
+													<span>Купить</span>
+												</a>
+											</p>
+											<p class="item-remember"><a href="#">В закладки</a></p>
+										</div>
+										<h3 class="item-title"><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
+										<p class="item-discount">30500 Р.</p>
+										<p class="item-price"><a href="#">25500 Р.</a></p>
+									</li>
+									<li class="catalog-item new-item">
+										<div>
+											<img class="item-image" src="img/product-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+											<p class="item-purchase">
+												<a href="#">
+													<svg version="1.1" id="Layer_28" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+														 width="15" height="15" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+														<g>
+															<circle cx="4.5" cy="13.5" r="1.5"/>
+															<circle cx="12.5" cy="13.5" r="1.5"/>
+															<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
+														</g>
+													</svg>
+													<span>Купить</span>
+												</a>
+											</p>
+											<p class="item-remember"><a href="#">В закладки</a></p>
+										</div>
+										<h3 class="item-title"><a href="#">Перфоратор BOSCH BFG 2000</a></h3>
+										<p class="item-price"><a href="#">12500 Р.</a></p>
+									</li>
+									<li class="catalog-item">
+										<div>
+											<img class="item-image" src="img/product-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+											<p class="item-purchase">
+												<a href="#">
+													<svg version="1.1" id="Layer_29" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+														 width="15" height="15" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+														<g>
+															<circle cx="4.5" cy="13.5" r="1.5"/>
+															<circle cx="12.5" cy="13.5" r="1.5"/>
+															<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
+														</g>
+													</svg>
+													<span>Купить</span>
+												</a>
+											</p>
+											<p class="item-remember"><a href="#">В закладки</a></p>
+										</div>
+										<h3 class="item-title"><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
+										<p class="item-discount">22500 Р.</p>
+										<p class="item-price"><a href="#">15500 Р.</a></p>
+									</li>
+									<li class="catalog-item new-item">
+										<div>
+											<img class="item-image" src="img/product-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+											<p class="item-purchase">
+												<a href="#">
+													<svg version="1.1" id="Layer_30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+														 width="15" height="15" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+														<g>
+															<circle cx="4.5" cy="13.5" r="1.5"/>
+															<circle cx="12.5" cy="13.5" r="1.5"/>
+															<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
+														</g>
+													</svg>
+													<span>Купить</span>
+												</a>
+											</p>
+											<p class="item-remember"><a href="#">В закладки</a></p>
+										</div>
+										<h3 class="item-title"><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
+										<p class="item-discount">30500 Р.</p>
+										<p class="item-price"><a href="#">25500 Р.</a></p>
+									</li>
+									<li class="catalog-item">
+										<div>
+											<img class="item-image" src="img/product-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+											<p class="item-purchase">
+												<a href="#">
+													<svg version="1.1" id="Layer_31" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+														 width="15" height="15" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+														<g>
+															<circle cx="4.5" cy="13.5" r="1.5"/>
+															<circle cx="12.5" cy="13.5" r="1.5"/>
+															<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
+														</g>
+													</svg>
+													<span>Купить</span>
+												</a>
+											</p>
+											<p class="item-remember"><a href="#">В закладки</a></p>
+										</div>
+										<h3 class="item-title"><a href="#">Перфоратор BOSCH BFG 2000</a></h3>
+										<p class="item-price"><a href="#">12500 Р.</a></p>
+									</li>
+									<li class="catalog-item new-item">
+										<div>
+											<img class="item-image" src="img/product-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+											<p class="item-purchase">
+												<a href="#">
+													<svg version="1.1" id="Layer_32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+														 width="15" height="15" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+														<g>
+															<circle cx="4.5" cy="13.5" r="1.5"/>
+															<circle cx="12.5" cy="13.5" r="1.5"/>
+															<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
+														</g>
+													</svg>
+													<span>Купить</span>
+												</a>
+											</p>
+											<p class="item-remember"><a href="#">В закладки</a></p>
+										</div>
+										<h3 class="item-title"><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
+										<p class="item-discount">22500 Р.</p>
+										<p class="item-price"><a href="#">15500 Р.</a></p>
+									</li>
+									<li class="catalog-item">
+										<div>
+											<img class="item-image" src="img/product-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+											<p class="item-purchase">
+												<a href="#">
+													<svg version="1.1" id="Layer_33" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+														 width="15" height="15" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+														<g>
+															<circle cx="4.5" cy="13.5" r="1.5"/>
+															<circle cx="12.5" cy="13.5" r="1.5"/>
+															<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
+														</g>
+													</svg>
+													<span>Купить</span>
+												</a>
+											</p>
+											<p class="item-remember"><a href="#">В закладки</a></p>
+										</div>
+										<h3 class="item-title"><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
+										<p class="item-discount">30500 Р.</p>
+										<p class="item-price"><a href="#">25500 Р.</a></p>
+									</li>
+									<li class="catalog-item">
+										<div>
+											<img class="item-image" src="img/product-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+											<p class="item-purchase">
+												<a href="#">
+													<svg version="1.1" id="Layer_34" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+														 width="15" height="15" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+														<g>
+															<circle cx="4.5" cy="13.5" r="1.5"/>
+															<circle cx="12.5" cy="13.5" r="1.5"/>
+															<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
+														</g>
+													</svg>
+													<span>Купить</span>
+												</a>
+											</p>
+											<p class="item-remember"><a href="#">В закладки</a></p>
+										</div>
+										<h3 class="item-title"><a href="#">Перфоратор BOSCH BFG 2000</a></h3>
+										<p class="item-price"><a href="#">12500 Р.</a></p>
+									</li>
+								</ul>
+							</section>
+						</div>
 					</div>
 				</div>
 				<section class="modal modal-cart">
