@@ -149,10 +149,10 @@ a:active .main-logo {
 
 .search:hover,
 .header-bookmarks:hover,
-.header-cart:hover,
+.header-cart:hover:not(.header-cart-full),
 .search:focus,
 .header-bookmarks:focus,
-.header-cart:focus {
+.header-cart:focus:not(.header-cart-full) {
 	background-color: #212a3a;
 }
 
@@ -198,7 +198,7 @@ a:active .main-logo {
 }
 
 .header-bookmarks:active,
-.header-cart:active {
+.header-cart:active:not(.header-cart-full) {
 	color: #8c9095;
 	background-color: #161d29;
 }
@@ -233,6 +233,15 @@ a:active .main-logo {
 
 .header-cart-full {
 	background-color: #ee3643;
+}
+
+.header-cart-full:hover,
+.header-cart-full:focus {
+	background-color: #ca2c37;
+}
+
+.header-cart-full:active {
+	background-color: #ba2732;
 }
 
 .header-order {
@@ -575,6 +584,8 @@ a:active .main-logo {
 
 .user-logout svg {
 	position: absolute;
+	top: 50%;
+	margin-top: -9px;
 	right: 10px;
 }
 
@@ -821,6 +832,7 @@ a:active .main-logo {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -1261,22 +1273,21 @@ input:checked ~ .filter-mark-current {
 	background-color: #ffffff;
 }
 
-/* Контент каталога - каталог */
-
-.catalog-inner {
-	flex-basis: 700px;
-}
+/* Контент каталога - сортировка */
 
 .sort {
+	box-sizing: border-box;
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
 	min-height: 38px;
 	margin-bottom: 20px;
+	padding-top: 11px;
 	background-color: #f7f3ec;
 }
 
 .sort .title {
+	margin: 0;
+	margin-right: 140px;
 	padding: 0;
 	padding-left: 19px;
 	background-color: transparent;
@@ -1285,22 +1296,52 @@ input:checked ~ .filter-mark-current {
 .sort-list {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
 .sort-price {
-	margin-left: 140px;
+	margin-right: 71px;
 }
 
 .sort-type {
-	margin-left: 71px;
+	margin-right: 66px;
 }
 
 .sort-func {
-	margin-left: 66px;
+	margin-right: 46px;
+}
+
+.sort-asc,
+.sort-desc {
+	width: 11px;
+	height: 10px;
+	margin-bottom: 8px;
+}
+
+.sort-asc {
+	margin-right: 21px;
+}
+
+.sort-asc polygon {
+	fill: #c5c5c5;
+}
+
+.sort-desc polyline {
+	fill: #c5c5c5;
+}
+
+.sort-asc:hover polygon,
+.sort-desc:hover polyline {
+	fill: #231f20;
+}
+
+.sort-asc:active polygon,
+.sort-desc:active polyline,
+.sort-link:focus polygon,
+.sort-link:focus polyline {
+	fill: #ee3643;
 }
 
 .sort-item a {
@@ -1313,13 +1354,13 @@ input:checked ~ .filter-mark-current {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.sort-item:hover a,
-.sort-item:focus a {
+.sort-item:hover a {
 	border-bottom: 1px solid #ee3643;
 	color: #000000;
 }
 
-.sort-item:active a {
+.sort-item:active a,
+.sort-item a:focus {
 	color: #ee3643;
 	border: none;
 }
@@ -1338,6 +1379,16 @@ input:checked ~ .filter-mark-current {
 	stroke: #ee3643;
 	stroke-width: 2px;
 	stroke-dasharray: 1;
+}
+
+/* Контент каталога - каталог */
+
+.catalog {
+	margin-bottom: 52px;
+}
+
+.catalog-inner {
+	flex-basis: 700px;
 }
 
 .catalog-list {
@@ -1540,6 +1591,93 @@ input:checked ~ .filter-mark-current {
 .item-remember:active {
 	border: 3px solid #c1c6ce;
 	color: #c1c6ce;
+}
+
+/* Контент каталога - пагинация */
+
+.pagination-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	margin-bottom: 60px;
+	padding: 0;
+	list-style: none;
+}
+
+.pagination-item {
+	position: relative;
+	width: 36px;
+	height: 36px;
+	margin-right: 10px;
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+	background-color: #ffffff;
+}
+
+.pagination-item:last-of-type {
+	width: 138px;
+}
+
+.pagination-item:hover {
+	border: 1px solid #bdc6ca;
+}
+
+.pagination-item:active,
+.pagination-item:focus {
+	border: 1px solid #ee3643;
+}
+
+.pagination-link {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.pagination-link span {
+	color: #000000;
+	font-family: 'PT Sans', 'Tahoma', sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+/* Контент каталога - текст */
+
+.catalog-text {
+	padding-top: 68px;
+	padding-bottom: 68px;
+	width: 100%;
+	font-family: 'Cuprum', 'Tahoma', sans-serif;
+	background-color: #f2f6f8;
+}
+
+.catalog-text-wrapper {
+	box-sizing: border-box;
+	width: 960px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.catalog-text-title {
+	margin: 0;
+	margin-bottom: 34px;
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.catalog-text p {
+	margin: 0;
+	padding: 0;
+	font-family: 'PT Sans', 'Tahoma', sans-serif;
+	font-size: 13px;
+	line-height: 24px;
 }
 
 /* Попапы главной */
