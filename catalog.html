@@ -5,7 +5,7 @@
     <title>Техномарт</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700iPT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/style-min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   	<header class="main-header entered-header">
@@ -154,7 +154,7 @@
 									<p>Производители:</p>
 									<ul class="filter-list">
 										<li class="filter-option">
-											<input name="bosh" id="bosh-field" type="checkbox" checked>
+											<input class="filter-field" name="bosh" id="bosh-field" type="checkbox" checked>
 											<svg class="filter-mark" version="1.1" id="Layer_7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 												 width="23" height="23" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
 												<path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
@@ -175,7 +175,7 @@
 											<label for="bosh-field">Bosch</label>
 										</li>
 										<li class="filter-option">
-											<input name="interskol" id="interskol-field" type="checkbox">
+											<input class="filter-field" name="interskol" id="interskol-field" type="checkbox">
 											<svg class="filter-mark" version="1.1" id="Layer_10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 												 width="23" height="23" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
 												<path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
@@ -196,7 +196,7 @@
 											<label for="interskol-field">Интерскол</label>
 										</li>
 										<li class="filter-option">
-											<input name="makita" id="makita-field" type="checkbox" checked>
+											<input class="filter-field" name="makita" id="makita-field" type="checkbox" checked>
 											<svg class="filter-mark" version="1.1" id="Layer_13" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 												 width="23" height="23" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
 												<path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
@@ -217,7 +217,7 @@
 											<label for="makita-field">Makita</label>
 										</li>
 										<li class="filter-option">
-											<input name="dewalt" id="dewalt-field" type="checkbox">
+											<input class="filter-field" name="dewalt" id="dewalt-field" type="checkbox">
 											<svg class="filter-mark" version="1.1" id="Layer_16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 												 width="23" height="23" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
 												<path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
@@ -238,7 +238,7 @@
 											<label for="dewalt-field">Dewalt</label>
 										</li>
 										<li class="filter-option">
-											<input name="hitachi" id="hitachi-field" type="checkbox">
+											<input class="filter-field" name="hitachi" id="hitachi-field" type="checkbox">
 											<svg class="filter-mark" version="1.1" id="Layer_19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 												 width="23" height="23" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
 												<path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
@@ -264,7 +264,7 @@
 									<p>Питание:</p>
 									<ul class="filter-list">
 										<li class="filter-option">
-											<input name="power" id="battery-field" type="radio" checked>
+											<input class="filter-field" name="power" id="battery-field" type="radio" checked>
 											<svg class="filter-mark" version="1.1" id="Layer_22" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 												 width="25" height="25" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
 												<path d="M12.5,4c4.687,0,8.5,3.813,8.5,8.5c0,4.687-3.813,8.5-8.5,8.5C7.813,21,4,17.187,4,12.5C4,7.813,7.813,4,12.5,4 M12.5,0
@@ -279,7 +279,7 @@
 											<label for="battery-field">Аккумуляторные</label>
 										</li>
 										<li class="filter-option">
-											<input name="power" id="wire-field" type="radio">
+											<input class="filter-field" name="power" id="wire-field" type="radio">
 											<svg class="filter-mark" version="1.1" id="Layer_24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 												 width="25" height="25" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
 												<path d="M12.5,4c4.687,0,8.5,3.813,8.5,8.5c0,4.687-3.813,8.5-8.5,8.5C7.813,21,4,17.187,4,12.5C4,7.813,7.813,4,12.5,4 M12.5,0
@@ -303,19 +303,19 @@
 								<h2 class="title">Сортировка:</h2>
 								<ul class="sort-list">
 									<li class="sort-item sort-price">
-										<a href="#">
+										<a class="sort-item-link" href="#">
 											<span>По цене</span>
 											<svg width="23px" height="1px"><line x1="0" y1="0" x2="100%" y2="0"/></svg>
 										</a>
 									</li>
 									<li class="sort-item sort-type">
-										<a href="#">
+										<a class="sort-item-link" href="#">
 											<span>По типу</span>
 											<svg width="23px" height="1px"><line x1="0" y1="0" x2="100%" y2="0"/></svg>
 										</a>
 									</li>
 									<li class="sort-item sort-func">
-										<a href="#">
+										<a class="sort-item-link" href="#">
 											<span>По функционалу</span>
 											<svg width="23px" height="1px"><line x1="0" y1="0" x2="100%" y2="0"/></svg>
 										</a>
@@ -539,20 +539,14 @@
 								</ul>
 							</section>
 							<ul class="pagination-list">
-								<li class="pagination-item">
-									<a href="#" class="pagination-link">
-										<span>1</span>
-									</a>
+								<li class="pagination-item current-page">
+									<a href="#" class="pagination-link">1</a>
 								</li>
 								<li class="pagination-item">
-									<a href="#" class="pagination-link">
-										<span>2</span>
-									</a>
+									<a href="#" class="pagination-link">2</a>
 								</li>
 								<li class="pagination-item">
-									<a href="#" class="pagination-link">
-										<span>3</span>
-									</a>
+									<a href="#" class="pagination-link">3</a>
 								</li>
 								<li class="pagination-item pagination-item-next">
 									<a href="#" class="pagination-link">
@@ -567,7 +561,7 @@
 					<div class="catalog-text-wrapper">
 						<h2 class="catalog-text-title">Пара слов о перфораторах</h2>
 						<p>
-							Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+							Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
 							Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
 							В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
 						</p>
@@ -582,10 +576,8 @@
 						</button>
 					</div>
 					<div class="cart-bottom">
-						<form class="cart-form" action="https://echo.htmlacademy.ru" method="post">
-							<a class="red-button cart-order" href="#">Оформить заказ</a>
-							<button class="red-button cart-continue" type="button">Продолжить покупки</button>
-						</form>
+						<a class="red-button cart-order" href="#">Оформить заказ</a>
+						<button class="red-button cart-continue" type="button">Продолжить покупки</button>
 					</div>
 				</section>
 			</div>
@@ -620,7 +612,7 @@
 			<div class="footer-bottom-wrapper">
 				<div class="footer-bottom">
 					<p class="footer-copyright">
-						© 2010–2019 Компания «Техномарт»<br>
+						© 2010–2019 Компания «Техномарт»
 						Все права защищены
 					</p>
 					<ul class="social-list">
@@ -664,11 +656,11 @@
 						</li>
 					</ul>
 					<p class="footer-email">
-						Обратная связь:<br>
+						Обратная связь:
 						<a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
 					</p>
 					<p class="footer-author">
-						Разработано –<br>
+						Разработано –
 						<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
 					</p>
 				</div>
