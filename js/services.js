@@ -7,18 +7,21 @@ var toggleInnerGuarantee = document.querySelector('.toggle-inner-guarantee');
 var toggleInnerCredit = document.querySelector('.toggle-inner-credit');
 
 servicesToggleDelivery.addEventListener('focus', function () {
+	servicesToggleDelivery.classList.remove('toggle-start');
 	toggleInnerGuarantee.classList.add('toggle-inner-hidden');
 	toggleInnerCredit.classList.add('toggle-inner-hidden');
 	toggleInnerDelivery.classList.remove('toggle-inner-hidden');
 })
 
 servicesToggleGuarantee.addEventListener('focus', function () {
+	servicesToggleDelivery.classList.remove('toggle-start');
 	toggleInnerDelivery.classList.add('toggle-inner-hidden');
 	toggleInnerCredit.classList.add('toggle-inner-hidden');
 	toggleInnerGuarantee.classList.remove('toggle-inner-hidden');
 })
 
 servicesToggleCredit.addEventListener('focus', function () {
+	servicesToggleDelivery.classList.remove('toggle-start');
 	toggleInnerGuarantee.classList.add('toggle-inner-hidden');
 	toggleInnerDelivery.classList.add('toggle-inner-hidden');
 	toggleInnerCredit.classList.remove('toggle-inner-hidden');
