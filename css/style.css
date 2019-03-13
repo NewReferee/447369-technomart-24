@@ -464,10 +464,12 @@ a:active .main-logo {
 /* Шапка главной - низ */
 
 .main-navigation {
+	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 	width: 960px;
 	margin: 0 auto;
+	padding: 0 10px;
 }
 
 .main-navigation li:hover,
@@ -487,8 +489,8 @@ a:active .main-logo {
 	min-height: 60px;
 	justify-content: space-between;
 	align-items: flex-start;
-	margin: 0 10px;
 	padding: 0;
+	margin: 0;
 	line-height: 17px;
 	list-style-type: none;
 	background-color: #32425c;
